@@ -9,7 +9,7 @@ from tkinter import *
 from tkinter import filedialog
 
 
-class NetBuilder(Frame):
+class TxtToCSV(Frame):
 
     file_opt = options = {}
     options['defaultextension'] = '.txt'
@@ -121,5 +121,5 @@ class NetBuilder(Frame):
         self.logVar.set(self.logThis)
 
 root = Tk()
-app = NetBuilder(master=root)
+app = TxtToCSV(master=root)
 app.mainloop()
