@@ -99,13 +99,19 @@ class TxtToCSV(Frame):
         b3 = Button(netFrame, text='Select Net File', command=self.getNetList)
         b3.pack(side='left')
 
-        logFrame = LabelFrame(self, text='Log')
-        logFrame.pack()
+        self.logFrame = LabelFrame(self, text='Log')
+        self.logFrame.pack()
         self.logVar = StringVar()
-        log = Label(logFrame, textvariable=self.logVar, width=35)
-        log.pack(side='bottom', anchor='s')
+        self.log = Label(self.logFrame, textvariable=self.logVar, width=35)
+        self.log.pack(side='bottom', anchor='s')
 
     def parseFileName(self, string, fType='txt', mode=0):
+        wordArray = re.findall(r'(\w)', string)
+        sz = len(wordArray)
+        if sz > 35:
+            self.log.pack_forget()
+            self.log = Label(self.logFrame, textvariable=self.logVar, width=sz)
+            self.log.pack(side='bottom', anchor='s')
         try:
             fName = re.findall(r'/([\w]+\.{0})'.format(fType), string)[0]
             fLoc = re.findall(r'\'([\w\W]+)/', string)[0]
