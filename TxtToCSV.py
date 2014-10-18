@@ -32,21 +32,88 @@ class TxtToCSV(Frame):
 
         self.initGUI()
 
-    def toCSV(self,file, csvFile):
-        j = ''
-        for line in file:
-            words = line.split()
-            words.append('\n')
-            l = len(words)
-            for i in range(l):
-                if i < l and words[i] != '\n':
-                    j = j + str(words[i]) + ','
-                else:
-                    j = j + str(words[i])
+    def toCSV(self, file, csvFile, mode=0):
+        if mode == 0:
+            j = ''
+            for line in file:
+                words = line.split()
+                words.append('\n')
+                l = len(words)
+                for i in range(l):
+                    if i < l and words[i] != '\n':
+                        j = j + str(words[i]) + ','
+                    else:
+                        j = j + str(words[i])
+    
+            file.close()
+            csvFile.write(j)
+            csvFile.close()
+        elif mode == 1:
+            j = ''
+            k = []
+            p = []
+            while len(k) == 0 and len(p) == 0:
+                t0 = file.readline()
+                k = re.findall(r'(Part[\s]+Value)',t0)
+                p = re.findall(r'(Qty Value[\s]+Device)',t0)
+                
+            
+            if len(k) > len(p):
+                for line in file:
+                    words = line.split()
+                    l = len(words)
+                    m = ''
+                    words1 = []
+                    for i in range(l):
+                        pinhd = re.findall(r'(PINHD-[\w]+)', words[i])
+                        if len(pinhd) > 0:
+                            pin = True
+                            break
+                        else:
+                            pin = False
+                    if pin:
+                        words1.append(words[0])
+                        words1.append('N/A')
+                        for i in range(1,l):
+                            words1.append(words[i])
+                        words1[len(words1)-2] = words1[len(words1)-2] + words1[len(words1)-1]
+                        words1.pop()
+                        words.append('\n')
+                        words = words1
+                        
+                    if len(words) > 5:
+                        
+                        for n in range(4,l):
+                            m = m + words[n] + ' '
+                        for n in range(4,l):
+                            del words[4]
 
-        file.close()
-        csvFile.write(j)
-        csvFile.close()
+                        if m.count(',') > 0:
+                            m1 = re.findall(r'(\w+),', m)
+                            m2 = re.findall(r',[\s]+([\w\s]+)', m)
+                            m = m1[0] + ' ' + m2[0]
+
+                        words.append(m)
+                        
+                    words.append('\n')
+                    l = len(words)
+                    
+                    for i in range(l):
+                        if words[i] != '\n':
+                            j = j + str(words[i]) + ','
+                        else:
+                            j = j + str(words[i])
+                            
+                file.close()
+                csvFile.write(j)
+                csvFile.close()                
+                            
+            elif len(p) > len(k):
+                pass
+            else:
+                pass
+        else:
+            pass
 
 
     def getPartList(self):
@@ -78,6 +145,15 @@ class TxtToCSV(Frame):
             if nFileCsv != None:
                 self.parseFileName(str(nFileCsv), fType='csv', mode=1)
                 self.toCSV(nFileTxt, nFileCsv)
+                
+    def getBOMList(self):
+        bFileTxt = filedialog.askopenfile(mode='r', **self.file_opt)
+        if bFileTxt != None:
+            self.parseFileName(str(bFileTxt))
+            bFileCsv = filedialog.asksaveasfile(mode='w', **self.wfile_opt)
+            if bFileCsv != None:
+                self.parseFileName(str(bFileCsv), fType='csv', mode=1)
+                self.toCSV(bFileTxt, bFileCsv, mode=1)
 
     def initGUI(self):
 
@@ -98,17 +174,23 @@ class TxtToCSV(Frame):
         netFrame.pack(side='left')
         b3 = Button(netFrame, text='Select Net File', command=self.getNetList)
         b3.pack(side='left')
+        
+        bomFrame = LabelFrame(bF, text='BOM List')
+        bomFrame.pack(side='left')
+        b4 = Button(bomFrame, text='Select BOM File', command=self.getBOMList)
+        b4.pack(side='left')
 
         self.logFrame = LabelFrame(self, text='Log')
         self.logFrame.pack()
         self.logVar = StringVar()
-        self.log = Label(self.logFrame, textvariable=self.logVar, width=35)
+        self.log = Label(self.logFrame, textvariable=self.logVar, width=50)
         self.log.pack(side='bottom', anchor='s')
 
     def parseFileName(self, string, fType='txt', mode=0):
         wordArray = re.findall(r'(\w)', string)
         sz = len(wordArray)
-        if sz > 35:
+        if sz > 100:
+            sz = sz/2 + (sz/2-50)
             self.log.pack_forget()
             self.log = Label(self.logFrame, textvariable=self.logVar, width=sz)
             self.log.pack(side='bottom', anchor='s')
@@ -125,6 +207,8 @@ class TxtToCSV(Frame):
             self.logThis = 'Failed to load/save file'
 
         self.logVar.set(self.logThis)
+        
+    
 
 root = Tk()
 app = TxtToCSV(master=root)
