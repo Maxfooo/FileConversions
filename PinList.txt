@@ -1,486 +1,179 @@
 Pinlist
 
-Exported from Pre_Alpha_Muscle.sch at 10/18/2014 10:49:45 PM
+Exported from LED_Vest.sch at 18-Oct-14 10:56:43 PM
 
-EAGLE Version 6.5.0 Copyright (c) 1988-2013 CadSoft
+EAGLE Version 6.4.0 Copyright (c) 1988-2013 CadSoft
 
 Part     Pad      Pin        Dir      Net
 
-5V_OUT   1        1          pas      TVDD
-         2        2          pas      TVDD
+100_OHM1 1        1          pas      N$11
+         2        2          pas      N$11
+         3        3          pas      N$11
+         4        4          pas      N$11
+         5        5          pas      N$11
+         6        6          pas      N$11
+         7        7          pas      N$11
+         8        8          pas      N$57
+         9        9          pas      N$56
+         10       10         pas      N$10
+         11       11         pas      N$9
+         12       12         pas      N$8
+         13       13         pas      N$7
+         14       14         pas      N$1
 
-BRAIN_TO_MUSCLE 1        1          pas      BUCK_OUT
-         2        2          pas      BUCK_OUT
-         3        3          pas      BUCK_OUT
-         4        4          pas      MGND
-         5        5          pas      MGND
-         6        6          pas      MGND
-         7        7          pas      BAT+
-         8        8          pas      EN_TVDD
-         9        9          pas      EN_RVDD
-         10       10         pas      TX_EN_OA
-         11       11         pas      EN_RX_OA
-         12       12         pas      TX_SIG
-         13       13         pas      RX_SIG
-
-C1       1        1          pas      N$1
-         2        2          pas      MGND
-
-C2       1        1          pas      N$16
-         2        2          pas      N$29
-
-C3       1        1          pas      N$11
-         2        2          pas      N$16
-
-C4       1        1          pas      N$13
-         2        2          pas      MGND
-
-C5       1        1          pas      N$5
-         2        2          pas      MGND
-
-C6       1        1          pas      N$7
-         2        2          pas      N$5
-
-C7       1        1          pas      N$3
-         2        2          pas      N$14
-
-C8       1        1          pas      RX_SIG
-         2        2          pas      N$8
-
-C9       1        1          pas      N$23
-         2        2          pas      MGND
-
-C10      1        1          pas      TVDD
-         2        2          pas      MGND
-
-C11      1        1          pas      RVDD
-         2        2          pas      MGND
-
-C12      1        1          pas      TVDD
-         2        2          pas      MGND
-
-C13      1        1          pas      TVDD
-         2        2          pas      MGND
-
-C14      1        1          pas      RVDD
-         2        2          pas      MGND
-
-C15      1        1          pas      TVDD
-         2        2          pas      MGND
-
-C16      1        1          pas      RVDD
-         2        2          pas      MGND
-
-C17      1        1          pas      TVDD
-         2        2          pas      MGND
-
-C18      1        1          pas      RVDD
-         2        2          pas      MGND
-
-C19      1        1          pas      RVDD
-         2        2          pas      MGND
-
-C20      1        1          pas      BAT+
-         2        2          pas      MGND
-
-C21      1        1          pas      N$9
-         2        2          pas      N$18
-
-C22      1        1          pas      N$9
-         2        2          pas      MGND
-
-C23      1        1          pas      RVDD
-         2        2          pas      MGND
-
-C24      1        1          pas      BUCK_OUT
-         2        2          pas      N$10
-
-C25      1        1          pas      N$28
-         2        2          pas      N$10
-
-C26      1        1          pas      N$29
-         2        2          pas      N$33
-
-C27      1        1          pas      RVDD
-         2        2          pas      MGND
-
-C28      1        1          pas      VREF
-         2        2          pas      MGND
-
-C29      1        1          pas      VREF
-         2        2          pas      MGND
-
-C30      1        1          pas      N$24
-         2        2          pas      MGND
-
-C31      1        1          pas      N$33
-         2        2          pas      N$6
-
-C_NC     1        1          pas      EN_RX_OA
-         2        2          pas      MGND
-
-EN_RX    1        1          pas      EN_RX_OA
-
-EN_RX_SCHMT 2        IN         in       EN_RX
-         3        V-         io       MGND
-         4        OUT        out      EN_RX_OA
-         5        V+         pwr      RVDD
-
-LED1     P1       KAT1       out      N$4
-         P2       AN1        in       TVDD
-         P3       KAT2       out      N$4
-         P4       AN2        in       TVDD
-         P5       KAT3       out      N$4
-         P6       AN3        in       TVDD
-
-LED2     P1       KAT1       out      N$4
-         P2       AN1        in       TVDD
-         P3       KAT2       out      N$4
-         P4       AN2        in       TVDD
-         P5       KAT3       out      N$4
-         P6       AN3        in       TVDD
-
-LED3     P1       KAT1       out      N$4
-         P2       AN1        in       TVDD
-         P3       KAT2       out      N$4
-         P4       AN2        in       TVDD
-         P5       KAT3       out      N$4
-         P6       AN3        in       TVDD
-
-LED4     P1       KAT1       out      N$4
-         P2       AN1        in       TVDD
-         P3       KAT2       out      N$4
-         P4       AN2        in       TVDD
-         P5       KAT3       out      N$4
-         P6       AN3        in       TVDD
-
-LED5     P1       KAT1       out      N$4
-         P2       AN1        in       TVDD
-         P3       KAT2       out      N$4
-         P4       AN2        in       TVDD
-         P5       KAT3       out      N$4
-         P6       AN3        in       TVDD
-
-LED6     P1       KAT1       out      N$4
-         P2       AN1        in       TVDD
-         P3       KAT2       out      N$4
-         P4       AN2        in       TVDD
-         P5       KAT3       out      N$4
-         P6       AN3        in       TVDD
-
-LED7     P1       KAT1       out      N$4
-         P2       AN1        in       TVDD
-         P3       KAT2       out      N$4
-         P4       AN2        in       TVDD
-         P5       KAT3       out      N$4
-         P6       AN3        in       TVDD
-
-LED8     P1       KAT1       out      N$4
-         P2       AN1        in       TVDD
-         P3       KAT2       out      N$4
-         P4       AN2        in       TVDD
-         P5       KAT3       out      N$4
-         P6       AN3        in       TVDD
-
-LED9     P1       KAT1       out      N$4
-         P2       AN1        in       TVDD
-         P3       KAT2       out      N$4
-         P4       AN2        in       TVDD
-         P5       KAT3       out      N$4
-         P6       AN3        in       TVDD
-
-LED10    P1       KAT1       out      N$4
-         P2       AN1        in       TVDD
-         P3       KAT2       out      N$4
-         P4       AN2        in       TVDD
-         P5       KAT3       out      N$4
-         P6       AN3        in       TVDD
-
-MGND1    1        1          pas      MGND
-
-MGND2    1        1          pas      MGND
-
-OPA349   1        OUT        out      VREF
-         2        V-         io       MGND
-         3        +IN        in       N$23
-         4        -IN        in       VREF
-         5        V+         pwr      RVDD
-
-OPA357   P1       OUT        out      N$29
-         P2       V-         io       MGND
-         P3       +IN        in       N$24
-         P4       -IN        in       N$33
-         P5       EN         in       EN_RX_OA
-         P6       V+         in       RVDD
-
-OPA835   P1       OUT        out      N$19
-         P2       V-         io       MGND
-         P3       +IN        in       N$1
-         P4       -IN        in       N$12
-         P5       !PD        in       TX_EN_OA
-         P6       V+         pwr      TVDD
-
-OPA2357  P1       OUTA       out      N$3
-         P2       -IN_A      in       N$14
-         P3       +IN_A      in       VREF
-         P4       V-         io       MGND
-         P5       EN_A       in       EN_RX_OA
-         P6       EN_B       in       EN_RX_OA
-         P7       +IN_B      in       VREF
-         P8       -IN_B      in       N$8
-         P9       OUTB       out      RX_SIG
-         P10      V+         pwr      RVDD
-
-PNP_BASE 1        1          pas      N$15
-
-R1       1        1          pas      MGND
-         2        2          pas      N$1
-
-R2       1        1          pas      N$1
+100_OHM2 1        1          pas      N$5
          2        2          pas      N$2
+         3        3          pas      N$3
+         4        4          pas      N$4
+         5        5          pas      N$6
+         6        6          pas      N$54
+         7        7          pas      N$55
+         8        8          pas      N$11
+         9        9          pas      N$11
+         10       10         pas      N$11
+         11       11         pas      N$11
+         12       12         pas      N$11
+         13       13         pas      N$11
+         14       14         pas      N$11
 
-R3       1        1          pas      MGND
-         2        2          pas      N$15
+A0_A3    1        1          pas      N$32
+         2        2          pas      N$33
+         3        3          pas      N$34
+         4        4          pas      N$35
 
-R4       1        1          pas      MGND
-         2        2          pas      N$15
-
-R5       1        1          pas      MGND
-         2        2          pas      N$15
-
-R6       1        1          pas      MGND
-         2        2          pas      N$15
-
-R7       1        1          pas      MGND
-         2        2          pas      N$15
-
-R8       1        1          pas      MGND
-         2        2          pas      N$15
-
-R9       1        1          pas      MGND
-         2        2          pas      N$15
-
-R10      1        1          pas      MGND
-         2        2          pas      N$15
-
-R11      1        1          pas      MGND
-         2        2          pas      N$15
-
-R12      1        1          pas      MGND
-         2        2          pas      N$15
-
-R13      1        1          pas      N$12
-         2        2          pas      TVDD
-
-R14      1        1          pas      N$13
-         2        2          pas      N$14
-
-R15      1        1          pas      N$11
-         2        2          pas      N$13
-
-R16      1        1          pas      MGND
-         2        2          pas      N$16
-
-R17      1        1          pas      N$3
-         2        2          pas      N$5
-
-R18      1        1          pas      N$7
-         2        2          pas      N$8
-
-R19      1        1          pas      N$14
-         2        2          pas      N$3
-
-R20      1        1          pas      N$8
-         2        2          pas      RX_SIG
-
-R21      1        1          pas      MGND
-         2        2          pas      N$23
-
-R22      1        1          pas      N$23
-         2        2          pas      RVDD
-
-R23      1        1          pas      MGND
-         2        2          pas      TX_EN
-
-R24      1        1          pas      MGND
-         2        2          pas      TX_SIG
-
-R25      1        1          pas      MGND
-         2        2          pas      EN_RX
-
-R26      1        1          pas      N$21
-         2        2          pas      BUCK_OUT
-
-R27      1        1          pas      N$10
-         2        2          pas      N$21
-
-R28      1        1          pas      N$10
-         2        2          pas      N$26
-
-R29      1        1          pas      N$26
+ARD_PRGMR 1        1          pas      N$29
          2        2          pas      N$28
+         3        3          pas      N$27
+         4        4          pas      N$26
+         5        5          pas      N$25
+         6        6          pas      N$23
 
-R30      1        1          pas      N$33
-         2        2          pas      N$32
+GND      1        P          pas      N$11
 
-R31      1        1          pas      N$32
-         2        2          pas      N$29
+PWM1     1        P          pas      N$24
 
-R32      1        1          pas      MGND
-         2        2          pas      N$29
+PWM2     1        P          pas      N$31
 
-R33      1        1          pas      N$6
-         2        2          pas      RVDD
+RAIL     1        1          pas      N$30
+         2        2          pas      N$11
+         3        3          pas      N$30
+         4        4          pas      N$11
 
-RVDD     1        1          pas      RVDD
+RST      1        P          pas      N$48
 
-RVDD_INDUCTOR 1        1          pas      N$9
-         2        2          pas      RVDD
+RST2     1        P          pas      N$53
 
-RVDD_LDO 1        OUT        out      N$9
-         2        SNS_ADJ    in       N$9
-         3        BYP        io       N$18
-         4        GND        io       MGND
-         5        ~SHDN      in       EN_RVDD
-         6        NC1        nc                *** unconnected ***
-         7        NC2        nc                *** unconnected ***
-         8        IN         in       BAT+
+RX1      1        P          pas      N$50
 
-RXOUT1   1        1          pas      N$29
+TANTALUM 1        1          pas      N$30
+         2        2          pas      N$11
 
-RXOUT2   1        1          pas      N$3
+TX1      1        P          pas      N$51
 
-RXOUT3   1        1          pas      RX_SIG
+U$1      G1       G1         in       N$44
+         G2       G2         in       N$45
+         S1       S1         out      N$1
+         S2       S2         out      N$5
+         D1A      D1A        in       N$13
+         D1B      D1B        in       N$13
+         D2A      D2A        in       N$17
+         D2B      D2B        in       N$17
 
-SMT_PD1  P$1_ANODE  P$1_ANODE  io       MGND
-         P$2_CATHO DE P$2_CATHODE io       N$6
+U$2      G1       G1         in       N$46
+         G2       G2         in       N$47
+         S1       S1         out      N$7
+         S2       S2         out      N$8
+         D1A      D1A        in       N$18
+         D1B      D1B        in       N$18
+         D2A      D2A        in       N$19
+         D2B      D2B        in       N$19
 
-SMT_PD2  P$1_ANODE  P$1_ANODE  io       MGND
-         P$2_CATHO DE P$2_CATHODE io       N$6
+U$3      G1       G1         in       N$22
+         G2       G2         in       N$49
+         S1       S1         out      N$9
+         S2       S2         out      N$10
+         D1A      D1A        in       N$20
+         D1B      D1B        in       N$20
+         D2A      D2A        in       N$21
+         D2B      D2B        in       N$21
 
-SMT_PD3  P$1_ANODE  P$1_ANODE  io       MGND
-         P$2_CATHO DE P$2_CATHODE io       N$6
+U$4      G1       G1         in       N$42
+         G2       G2         in       N$43
+         S1       S1         out      N$3
+         S2       S2         out      N$2
+         D1A      D1A        in       N$15
+         D1B      D1B        in       N$15
+         D2A      D2A        in       N$14
+         D2B      D2B        in       N$14
 
-SMT_PD4  P$1_ANODE  P$1_ANODE  io       MGND
-         P$2_CATHO DE P$2_CATHODE io       N$6
+U$5      G1       G1         in       N$40
+         G2       G2         in       N$41
+         S1       S1         out      N$6
+         S2       S2         out      N$4
+         D1A      D1A        in       N$16
+         D1B      D1B        in       N$16
+         D2A      D2A        in       N$12
+         D2B      D2B        in       N$12
 
-SMT_PD5  P$1_ANODE  P$1_ANODE  io       MGND
-         P$2_CATHO DE P$2_CATHODE io       N$6
+U$6      1        6          io       N$16
+         2        5          io       N$12
+         3        4          io       N$15
+         4        3          io       N$14
+         5        2          io       N$13
+         6        1          io       N$30
 
-SMT_PD6  P$1_ANODE  P$1_ANODE  io       MGND
-         P$2_CATHO DE P$2_CATHODE io       N$6
+U$7      1        6          io       N$30
+         2        5          io       N$17
+         3        4          io       N$18
+         4        3          io       N$19
+         5        2          io       N$20
+         6        1          io       N$21
 
-SMT_PD7  P$1_ANODE  P$1_ANODE  io       MGND
-         P$2_CATHO DE P$2_CATHODE io       N$6
+U$8      2        2          io       N$49
+         3        3          io       N$31
+         4        4          io       N$22
+         5        5          io       N$24
+         6        6          io       N$47
+         7        7          io       N$46
+         8        8          io       N$45
+         9        9          io       N$44
+         10       10         io       N$43
+         11       11         io       N$42
+         12       12         io       N$41
+         13       13         io       N$40
+         A0       A0         io       N$35
+         A1       A1         io       N$34
+         A2       A2         io       N$33
+         A3       A3         io       N$32
+         A4       A4         io                *** unconnected ***
+         A5       A5         io                *** unconnected ***
+         A6       A6         io                *** unconnected ***
+         A7       A7         io                *** unconnected ***
+         BLK      BLK        io       N$29
+         GND      GND        io       N$28
+         GRN      GRN        io       N$23
+         RAW      RAW        io       N$30
+         RST      RST        io       N$48
+         RX0      RX0        io       N$26
+         RX1      RX1        io       N$50
+         TX0      TX0        io       N$25
+         TX1      TX1        io       N$51
+         VCC      VCC        io       N$27
+         GND1     GND1       io       N$11
+         GND2     GND2       io       N$11
+         RST2     RST2       io       N$53
+         VCC2     VCC2       io       N$52
 
-SMT_PD8  P$1_ANODE  P$1_ANODE  io       MGND
-         P$2_CATHO DE P$2_CATHODE io       N$6
+VCC2     1        P          pas      N$52
 
-SMT_PD9  P$1_ANODE  P$1_ANODE  io       MGND
-         P$2_CATHO DE P$2_CATHODE io       N$6
+XTRA_R1  1        P          pas      N$56
 
-SMT_PD10 P$1_ANODE  P$1_ANODE  io       MGND
-         P$2_CATHO DE P$2_CATHODE io       N$6
+XTRA_R2  1        P          pas      N$57
 
-TH_PD1   A        P$1_ANODE  io       MGND
-         C        P$2_CATHODE io       N$6
+XTRA_R3  1        P          pas      N$54
 
-TH_PD2   A        P$1_ANODE  io       MGND
-         C        P$2_CATHODE io       N$6
+XTRA_R4  1        P          pas      N$55
 
-TH_PD3   A        P$1_ANODE  io       MGND
-         C        P$2_CATHODE io       N$6
-
-TH_PD4   A        P$1_ANODE  io       MGND
-         C        P$2_CATHODE io       N$6
-
-TH_PD5   A        P$1_ANODE  io       MGND
-         C        P$2_CATHODE io       N$6
-
-TH_PD6   A        P$1_ANODE  io       MGND
-         C        P$2_CATHODE io       N$6
-
-TH_PD7   A        P$1_ANODE  io       MGND
-         C        P$2_CATHODE io       N$6
-
-TH_PD8   A        P$1_ANODE  io       MGND
-         C        P$2_CATHODE io       N$6
-
-TH_PD9   A        P$1_ANODE  io       MGND
-         C        P$2_CATHODE io       N$6
-
-TH_PD10  A        P$1_ANODE  io       MGND
-         C        P$2_CATHODE io       N$6
-
-TVDD     1        1          pas      TVDD
-
-TVDD_INDUCTOR 1        1          pas      N$28
-         2        2          pas      TVDD
-
-TVDD_LDO 1        ADJ        in       N$26
-         2        OUT1       out      N$28
-         3        IN         in       BUCK_OUT
-         4        OUT2       out      N$28
-
-TVDD_NMOS1 1        G          pas      EN_TVDD
-         2        S          pas      N$10
-         3        D          pas      N$21
-
-TVDD_NMOS2 1        G          pas      N$21
-         2        S          pas      N$10
-         3        D          pas      N$26
-
-TX_EN    1        1          pas      TX_EN_OA
-
-TX_EN_LVL_SHFT P1       VCCA       pwr      TVDD
-         P2       GND        io       MGND
-         P3       A          io       TX_EN_OA
-         P4       B          io       TX_EN_LVL
-         P5       DIR        pwr      TVDD
-         P6       VCCB       pwr      RVDD
-
-TX_EN_SCHMT 2        IN         in       TX_EN
-         3        V-         io       MGND
-         4        OUT        out      TX_EN_LVL
-         5        V+         pwr      TVDD
-
-TX_NPN1  1        B          pas      N$19
-         2        E          pas      N$15
-         3        C          pas      N$4
-
-TX_NPN2  1        B          pas      N$19
-         2        E          pas      N$15
-         3        C          pas      N$4
-
-TX_NPN3  1        B          pas      N$19
-         2        E          pas      N$15
-         3        C          pas      N$4
-
-TX_NPN4  1        B          pas      N$19
-         2        E          pas      N$15
-         3        C          pas      N$4
-
-TX_NPN5  1        B          pas      N$19
-         2        E          pas      N$15
-         3        C          pas      N$4
-
-TX_OUT   1        1          pas      N$19
-
-TX_PNP   1        B          pas      N$15
-         2        E          pas      N$12
-         3        C          pas      MGND
-
-TX_SIG_LVL_SHFT P1       VCCA       pwr      TVDD
-         P2       GND        io       MGND
-         P3       A          io       N$2
-         P4       B          io       TX_FLSH
-         P5       DIR        pwr      TVDD
-         P6       VCCB       pwr      RVDD
-
-TX_SIG_SCHMT 2        IN         in       TX_SIG
-         3        V-         io       MGND
-         4        OUT        out      TX_FLSH
-         5        V+         pwr      TVDD
-
-VREF     1        1          pas      VREF
+Z11V     A        A          pas      N$11
+         C        C          pas      N$30
 
