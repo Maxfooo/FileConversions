@@ -1,396 +1,201 @@
 Netlist
 
-Exported from Pre_Alpha_Muscle.sch at 10/18/2014 10:48:44 PM
+Exported from LED_Vest.sch at 18-Oct-14 10:56:24 PM
 
-EAGLE Version 6.5.0 Copyright (c) 1988-2013 CadSoft
+EAGLE Version 6.4.0 Copyright (c) 1988-2013 CadSoft
 
 Net      Part     Pad      Pin        Sheet
 
-BAT+     BRAIN_TO_MUSCLE 7        7          3
-         C20      1        1          3
-         RVDD_LDO 8        IN         3
+N$1      100_OHM1 14       14         1
+         U$1      S1       S1         1
 
-BUCK_OUT BRAIN_TO_MUSCLE 1        1          3
-         BRAIN_TO_MUSCLE 2        2          3
-         BRAIN_TO_MUSCLE 3        3          3
-         C24      1        1          3
-         R26      2        2          3
-         TVDD_LDO 3        IN         3
+N$2      100_OHM2 2        2          1
+         U$4      S2       S2         1
 
-EN_RVDD  BRAIN_TO_MUSCLE 9        9          3
-         RVDD_LDO 5        ~SHDN      3
+N$3      100_OHM2 3        3          1
+         U$4      S1       S1         1
 
-EN_RX    EN_RX_SCHMT 2        IN         2
-         R25      2        2          2
+N$4      100_OHM2 4        4          1
+         U$5      S2       S2         1
 
-EN_RX_OA BRAIN_TO_MUSCLE 11       11         3
-         C_NC     1        1          2
-         EN_RX    1        1          2
-         EN_RX_SCHMT 4        OUT        2
-         OPA2357  P5       EN_A       2
-         OPA2357  P6       EN_B       2
-         OPA357   P5       EN         2
+N$5      100_OHM2 1        1          1
+         U$1      S2       S2         1
 
-EN_TVDD  BRAIN_TO_MUSCLE 8        8          3
-         TVDD_NMOS1 1        G          3
+N$6      100_OHM2 5        5          1
+         U$5      S1       S1         1
 
-MGND     BRAIN_TO_MUSCLE 4        4          3
-         BRAIN_TO_MUSCLE 5        5          3
-         BRAIN_TO_MUSCLE 6        6          3
-         C1       2        2          1
-         C10      2        2          1
-         C11      2        2          1
-         C12      2        2          1
-         C13      2        2          1
-         C14      2        2          2
-         C15      2        2          1
-         C16      2        2          1
-         C17      2        2          1
-         C18      2        2          2
-         C19      2        2          2
-         C20      2        2          3
-         C22      2        2          3
-         C23      2        2          3
-         C27      2        2          2
-         C28      2        2          2
-         C29      2        2          2
-         C30      2        2          2
-         C4       2        2          2
-         C5       2        2          2
-         C9       2        2          2
-         C_NC     2        2          2
-         EN_RX_SCHMT 3        V-         2
-         MGND1    1        1          1
-         MGND2    1        1          1
-         OPA2357  P4       V-         2
-         OPA349   2        V-         2
-         OPA357   P2       V-         2
-         OPA835   P2       V-         1
-         R1       1        1          1
-         R10      1        1          1
-         R11      1        1          1
-         R12      1        1          1
-         R16      1        1          2
-         R21      1        1          2
-         R23      1        1          1
-         R24      1        1          1
-         R25      1        1          2
-         R3       1        1          1
-         R32      1        1          2
-         R4       1        1          1
-         R5       1        1          1
-         R6       1        1          1
-         R7       1        1          1
-         R8       1        1          1
-         R9       1        1          1
-         RVDD_LDO 4        GND        3
-         SMT_PD1  P$1_ANODE P$1_ANODE  2
-         SMT_PD10 P$1_ANODE P$1_ANODE  2
-         SMT_PD2  P$1_ANODE P$1_ANODE  2
-         SMT_PD3  P$1_ANODE P$1_ANODE  2
-         SMT_PD4  P$1_ANODE P$1_ANODE  2
-         SMT_PD5  P$1_ANODE P$1_ANODE  2
-         SMT_PD6  P$1_ANODE P$1_ANODE  2
-         SMT_PD7  P$1_ANODE P$1_ANODE  2
-         SMT_PD8  P$1_ANODE P$1_ANODE  2
-         SMT_PD9  P$1_ANODE P$1_ANODE  2
-         TH_PD1   A        P$1_ANODE  2
-         TH_PD10  A        P$1_ANODE  2
-         TH_PD2   A        P$1_ANODE  2
-         TH_PD3   A        P$1_ANODE  2
-         TH_PD4   A        P$1_ANODE  2
-         TH_PD5   A        P$1_ANODE  2
-         TH_PD6   A        P$1_ANODE  2
-         TH_PD7   A        P$1_ANODE  2
-         TH_PD8   A        P$1_ANODE  2
-         TH_PD9   A        P$1_ANODE  2
-         TX_EN_LVL_SHFT P2       GND        1
-         TX_EN_SCHMT 3        V-         1
-         TX_PNP   3        C          1
-         TX_SIG_LVL_SHFT P2       GND        1
-         TX_SIG_SCHMT 3        V-         1
+N$7      100_OHM1 13       13         1
+         U$2      S1       S1         1
 
-N$1      C1       1        1          1
-         OPA835   P3       +IN        1
-         R1       2        2          1
-         R2       1        1          1
+N$8      100_OHM1 12       12         1
+         U$2      S2       S2         1
 
-N$2      R2       2        2          1
-         TX_SIG_LVL_SHFT P3       A          1
+N$9      100_OHM1 11       11         1
+         U$3      S1       S1         1
 
-N$3      C7       1        1          2
-         OPA2357  P1       OUTA       2
-         R17      1        1          2
-         R19      2        2          2
-         RXOUT2   1        1          2
+N$10     100_OHM1 10       10         1
+         U$3      S2       S2         1
 
-N$4      LED1     P1       KAT1       1
-         LED1     P3       KAT2       1
-         LED1     P5       KAT3       1
-         LED10    P1       KAT1       1
-         LED10    P3       KAT2       1
-         LED10    P5       KAT3       1
-         LED2     P1       KAT1       1
-         LED2     P3       KAT2       1
-         LED2     P5       KAT3       1
-         LED3     P1       KAT1       1
-         LED3     P3       KAT2       1
-         LED3     P5       KAT3       1
-         LED4     P1       KAT1       1
-         LED4     P3       KAT2       1
-         LED4     P5       KAT3       1
-         LED5     P1       KAT1       1
-         LED5     P3       KAT2       1
-         LED5     P5       KAT3       1
-         LED6     P1       KAT1       1
-         LED6     P3       KAT2       1
-         LED6     P5       KAT3       1
-         LED7     P1       KAT1       1
-         LED7     P3       KAT2       1
-         LED7     P5       KAT3       1
-         LED8     P1       KAT1       1
-         LED8     P3       KAT2       1
-         LED8     P5       KAT3       1
-         LED9     P1       KAT1       1
-         LED9     P3       KAT2       1
-         LED9     P5       KAT3       1
-         TX_NPN1  3        C          1
-         TX_NPN2  3        C          1
-         TX_NPN3  3        C          1
-         TX_NPN4  3        C          1
-         TX_NPN5  3        C          1
+N$11     100_OHM1 1        1          1
+         100_OHM1 2        2          1
+         100_OHM1 3        3          1
+         100_OHM1 4        4          1
+         100_OHM1 5        5          1
+         100_OHM1 6        6          1
+         100_OHM1 7        7          1
+         100_OHM2 10       10         1
+         100_OHM2 11       11         1
+         100_OHM2 12       12         1
+         100_OHM2 13       13         1
+         100_OHM2 14       14         1
+         100_OHM2 8        8          1
+         100_OHM2 9        9          1
+         GND      1        P          1
+         RAIL     2        2          1
+         RAIL     4        4          1
+         TANTALUM 2        2          1
+         U$8      GND1     GND1       1
+         U$8      GND2     GND2       1
+         Z11V     A        A          1
 
-N$5      C5       1        1          2
-         C6       2        2          2
-         R17      2        2          2
+N$12     U$5      D2A      D2A        1
+         U$5      D2B      D2B        1
+         U$6      2        5          1
 
-N$6      C31      2        2          2
-         R33      1        1          2
-         SMT_PD1  P$2_CATHODE P$2_CATHODE 2
-         SMT_PD10 P$2_CATHODE P$2_CATHODE 2
-         SMT_PD2  P$2_CATHODE P$2_CATHODE 2
-         SMT_PD3  P$2_CATHODE P$2_CATHODE 2
-         SMT_PD4  P$2_CATHODE P$2_CATHODE 2
-         SMT_PD5  P$2_CATHODE P$2_CATHODE 2
-         SMT_PD6  P$2_CATHODE P$2_CATHODE 2
-         SMT_PD7  P$2_CATHODE P$2_CATHODE 2
-         SMT_PD8  P$2_CATHODE P$2_CATHODE 2
-         SMT_PD9  P$2_CATHODE P$2_CATHODE 2
-         TH_PD1   C        P$2_CATHODE 2
-         TH_PD10  C        P$2_CATHODE 2
-         TH_PD2   C        P$2_CATHODE 2
-         TH_PD3   C        P$2_CATHODE 2
-         TH_PD4   C        P$2_CATHODE 2
-         TH_PD5   C        P$2_CATHODE 2
-         TH_PD6   C        P$2_CATHODE 2
-         TH_PD7   C        P$2_CATHODE 2
-         TH_PD8   C        P$2_CATHODE 2
-         TH_PD9   C        P$2_CATHODE 2
+N$13     U$1      D1A      D1A        1
+         U$1      D1B      D1B        1
+         U$6      5        2          1
 
-N$7      C6       1        1          2
-         R18      1        1          2
+N$14     U$4      D2A      D2A        1
+         U$4      D2B      D2B        1
+         U$6      4        3          1
 
-N$8      C8       2        2          2
-         OPA2357  P8       -IN_B      2
-         R18      2        2          2
-         R20      1        1          2
+N$15     U$4      D1A      D1A        1
+         U$4      D1B      D1B        1
+         U$6      3        4          1
 
-N$9      C21      1        1          3
-         C22      1        1          3
-         RVDD_INDUCTOR 1        1          3
-         RVDD_LDO 1        OUT        3
-         RVDD_LDO 2        SNS_ADJ    3
+N$16     U$5      D1A      D1A        1
+         U$5      D1B      D1B        1
+         U$6      1        6          1
 
-N$10     C24      2        2          3
-         C25      2        2          3
-         R27      1        1          3
-         R28      1        1          3
-         TVDD_NMOS1 2        S          3
-         TVDD_NMOS2 2        S          3
+N$17     U$1      D2A      D2A        1
+         U$1      D2B      D2B        1
+         U$7      2        5          1
 
-N$11     C3       1        1          2
-         R15      1        1          2
+N$18     U$2      D1A      D1A        1
+         U$2      D1B      D1B        1
+         U$7      3        4          1
 
-N$12     OPA835   P4       -IN        1
-         R13      1        1          1
-         TX_PNP   2        E          1
+N$19     U$2      D2A      D2A        1
+         U$2      D2B      D2B        1
+         U$7      4        3          1
 
-N$13     C4       1        1          2
-         R14      1        1          2
-         R15      2        2          2
+N$20     U$3      D1A      D1A        1
+         U$3      D1B      D1B        1
+         U$7      5        2          1
 
-N$14     C7       2        2          2
-         OPA2357  P2       -IN_A      2
-         R14      2        2          2
-         R19      1        1          2
+N$21     U$3      D2A      D2A        1
+         U$3      D2B      D2B        1
+         U$7      6        1          1
 
-N$15     PNP_BASE 1        1          1
-         R10      2        2          1
-         R11      2        2          1
-         R12      2        2          1
-         R3       2        2          1
-         R4       2        2          1
-         R5       2        2          1
-         R6       2        2          1
-         R7       2        2          1
-         R8       2        2          1
-         R9       2        2          1
-         TX_NPN1  2        E          1
-         TX_NPN2  2        E          1
-         TX_NPN3  2        E          1
-         TX_NPN4  2        E          1
-         TX_NPN5  2        E          1
-         TX_PNP   1        B          1
+N$22     U$3      G1       G1         1
+         U$8      4        4          1
 
-N$16     C2       1        1          2
-         C3       2        2          2
-         R16      2        2          2
+N$23     ARD_PRGMR 6        6          1
+         U$8      GRN      GRN        1
 
-N$18     C21      2        2          3
-         RVDD_LDO 3        BYP        3
+N$24     PWM1     1        P          1
+         U$8      5        5          1
 
-N$19     OPA835   P1       OUT        1
-         TX_NPN1  1        B          1
-         TX_NPN2  1        B          1
-         TX_NPN3  1        B          1
-         TX_NPN4  1        B          1
-         TX_NPN5  1        B          1
-         TX_OUT   1        1          1
+N$25     ARD_PRGMR 5        5          1
+         U$8      TX0      TX0        1
 
-N$21     R26      1        1          3
-         R27      2        2          3
-         TVDD_NMOS1 3        D          3
-         TVDD_NMOS2 1        G          3
+N$26     ARD_PRGMR 4        4          1
+         U$8      RX0      RX0        1
 
-N$23     C9       1        1          2
-         OPA349   3        +IN        2
-         R21      2        2          2
-         R22      1        1          2
+N$27     ARD_PRGMR 3        3          1
+         U$8      VCC      VCC        1
 
-N$24     C30      1        1          2
-         OPA357   P3       +IN        2
+N$28     ARD_PRGMR 2        2          1
+         U$8      GND      GND        1
 
-N$26     R28      2        2          3
-         R29      1        1          3
-         TVDD_LDO 1        ADJ        3
-         TVDD_NMOS2 3        D          3
+N$29     ARD_PRGMR 1        1          1
+         U$8      BLK      BLK        1
 
-N$28     C25      1        1          3
-         R29      2        2          3
-         TVDD_INDUCTOR 1        1          3
-         TVDD_LDO 2        OUT1       3
-         TVDD_LDO 4        OUT2       3
+N$30     RAIL     1        1          1
+         RAIL     3        3          1
+         TANTALUM 1        1          1
+         U$6      6        1          1
+         U$7      1        6          1
+         U$8      RAW      RAW        1
+         Z11V     C        C          1
 
-N$29     C2       2        2          2
-         C26      1        1          2
-         OPA357   P1       OUT        2
-         R31      2        2          2
-         R32      2        2          2
-         RXOUT1   1        1          2
+N$31     PWM2     1        P          1
+         U$8      3        3          1
 
-N$32     R30      2        2          2
-         R31      1        1          2
+N$32     A0_A3    1        1          1
+         U$8      A3       A3         1
 
-N$33     C26      2        2          2
-         C31      1        1          2
-         OPA357   P4       -IN        2
-         R30      1        1          2
+N$33     A0_A3    2        2          1
+         U$8      A2       A2         1
 
-RVDD     C11      1        1          1
-         C14      1        1          2
-         C16      1        1          1
-         C18      1        1          2
-         C19      1        1          2
-         C23      1        1          3
-         C27      1        1          2
-         EN_RX_SCHMT 5        V+         2
-         OPA2357  P10      V+         2
-         OPA349   5        V+         2
-         OPA357   P6       V+         2
-         R22      2        2          2
-         R33      2        2          2
-         RVDD     1        1          3
-         RVDD_INDUCTOR 2        2          3
-         TX_EN_LVL_SHFT P6       VCCB       1
-         TX_SIG_LVL_SHFT P6       VCCB       1
+N$34     A0_A3    3        3          1
+         U$8      A1       A1         1
 
-RX_SIG   BRAIN_TO_MUSCLE 13       13         3
-         C8       1        1          2
-         OPA2357  P9       OUTB       2
-         R20      2        2          2
-         RXOUT3   1        1          2
+N$35     A0_A3    4        4          1
+         U$8      A0       A0         1
 
-TVDD     5V_OUT   1        1          3
-         5V_OUT   2        2          3
-         C10      1        1          1
-         C12      1        1          1
-         C13      1        1          1
-         C15      1        1          1
-         C17      1        1          1
-         LED1     P2       AN1        1
-         LED1     P4       AN2        1
-         LED1     P6       AN3        1
-         LED10    P2       AN1        1
-         LED10    P4       AN2        1
-         LED10    P6       AN3        1
-         LED2     P2       AN1        1
-         LED2     P4       AN2        1
-         LED2     P6       AN3        1
-         LED3     P2       AN1        1
-         LED3     P4       AN2        1
-         LED3     P6       AN3        1
-         LED4     P2       AN1        1
-         LED4     P4       AN2        1
-         LED4     P6       AN3        1
-         LED5     P2       AN1        1
-         LED5     P4       AN2        1
-         LED5     P6       AN3        1
-         LED6     P2       AN1        1
-         LED6     P4       AN2        1
-         LED6     P6       AN3        1
-         LED7     P2       AN1        1
-         LED7     P4       AN2        1
-         LED7     P6       AN3        1
-         LED8     P2       AN1        1
-         LED8     P4       AN2        1
-         LED8     P6       AN3        1
-         LED9     P2       AN1        1
-         LED9     P4       AN2        1
-         LED9     P6       AN3        1
-         OPA835   P6       V+         1
-         R13      2        2          1
-         TVDD     1        1          3
-         TVDD_INDUCTOR 2        2          3
-         TX_EN_LVL_SHFT P1       VCCA       1
-         TX_EN_LVL_SHFT P5       DIR        1
-         TX_EN_SCHMT 5        V+         1
-         TX_SIG_LVL_SHFT P1       VCCA       1
-         TX_SIG_LVL_SHFT P5       DIR        1
-         TX_SIG_SCHMT 5        V+         1
+N$40     U$5      G1       G1         1
+         U$8      13       13         1
 
-TX_EN    R23      2        2          1
-         TX_EN_SCHMT 2        IN         1
+N$41     U$5      G2       G2         1
+         U$8      12       12         1
 
-TX_EN_LVL TX_EN_LVL_SHFT P4       B          1
-         TX_EN_SCHMT 4        OUT        1
+N$42     U$4      G1       G1         1
+         U$8      11       11         1
 
-TX_EN_OA BRAIN_TO_MUSCLE 10       10         3
-         OPA835   P5       !PD        1
-         TX_EN    1        1          1
-         TX_EN_LVL_SHFT P3       A          1
+N$43     U$4      G2       G2         1
+         U$8      10       10         1
 
-TX_FLSH  TX_SIG_LVL_SHFT P4       B          1
-         TX_SIG_SCHMT 4        OUT        1
+N$44     U$1      G1       G1         1
+         U$8      9        9          1
 
-TX_SIG   BRAIN_TO_MUSCLE 12       12         3
-         R24      2        2          1
-         TX_SIG_SCHMT 2        IN         1
+N$45     U$1      G2       G2         1
+         U$8      8        8          1
 
-VREF     C28      1        1          2
-         C29      1        1          2
-         OPA2357  P3       +IN_A      2
-         OPA2357  P7       +IN_B      2
-         OPA349   1        OUT        2
-         OPA349   4        -IN        2
-         VREF     1        1          2
+N$46     U$2      G1       G1         1
+         U$8      7        7          1
+
+N$47     U$2      G2       G2         1
+         U$8      6        6          1
+
+N$48     RST      1        P          1
+         U$8      RST      RST        1
+
+N$49     U$3      G2       G2         1
+         U$8      2        2          1
+
+N$50     RX1      1        P          1
+         U$8      RX1      RX1        1
+
+N$51     TX1      1        P          1
+         U$8      TX1      TX1        1
+
+N$52     U$8      VCC2     VCC2       1
+         VCC2     1        P          1
+
+N$53     RST2     1        P          1
+         U$8      RST2     RST2       1
+
+N$54     100_OHM2 6        6          1
+         XTRA_R3  1        P          1
+
+N$55     100_OHM2 7        7          1
+         XTRA_R4  1        P          1
+
+N$56     100_OHM1 9        9          1
+         XTRA_R1  1        P          1
+
+N$57     100_OHM1 8        8          1
+         XTRA_R2  1        P          1
 
