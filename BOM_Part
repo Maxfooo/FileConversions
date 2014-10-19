@@ -1,0 +1,133 @@
+Partlist exported from C:/SVN/Alpha/Eagle/Designs/Muscle/Pre_Alpha_Muscle_Board/Pre_Alpha_Muscle.sch at 10/17/2014 1:38:42 PM
+
+Part            Value              Device             Package            Description                                
+5V_OUT                             PINHD-1X2          1X02               PIN HEADER                                 
+BRAIN_TO_MUSCLE                    PINHD-1X13         1X13               PIN HEADER                                 
+C1              20p                C-USC0603          C0603              CAPACITOR, American symbol                 
+C2              4700p              C-USC0603          C0603              CAPACITOR, American symbol                 
+C3              4700p              C-USC0603          C0603              CAPACITOR, American symbol                 
+C4              25n                C-USC0603          C0603              CAPACITOR, American symbol                 
+C5              10n                C-USC0603          C0603              CAPACITOR, American symbol                 
+C6              10n                C-USC0603          C0603              CAPACITOR, American symbol                 
+C7              2n                 C-USC0603          C0603              CAPACITOR, American symbol                 
+C8              470p               C-USC0603          C0603              CAPACITOR, American symbol                 
+C9              10n                C-USC0603          C0603              CAPACITOR, American symbol                 
+C10             10n                C-USC0603          C0603              CAPACITOR, American symbol                 
+C11             10n                C-USC0603          C0603              CAPACITOR, American symbol                 
+C12             10n                C-USC0603          C0603              CAPACITOR, American symbol                 
+C13             10n                C-USC0603          C0603              CAPACITOR, American symbol                 
+C14             10n                C-USC0603          C0603              CAPACITOR, American symbol                 
+C15             10n                C-USC0603          C0603              CAPACITOR, American symbol                 
+C16             10n                C-USC0603          C0603              CAPACITOR, American symbol                 
+C17             10n                C-USC0603          C0603              CAPACITOR, American symbol                 
+C18             10n                C-USC0603          C0603              CAPACITOR, American symbol                 
+C19             10n                C-USC0603          C0603              CAPACITOR, American symbol                 
+C20             100n               C-USC0603          C0603              CAPACITOR, American symbol                 
+C21             1n                 C-USC0603          C0603              CAPACITOR, American symbol                 
+C22             10u                C-USC0603          C0603              CAPACITOR, American symbol                 
+C23             10u                C-USC0603          C0603              CAPACITOR, American symbol                 
+C24             100n               C-USC0603          C0603              CAPACITOR, American symbol                 
+C25             10u                C-USC0603          C0603              CAPACITOR, American symbol                 
+C26             1p                 C-USC0603          C0603              CAPACITOR, American symbol                 
+C27             100n               C-USC0603          C0603              CAPACITOR, American symbol                 
+C28             1u                 C-USC0603          C0603              CAPACITOR, American symbol                 
+C29             1u                 C-USC0603          C0603              CAPACITOR, American symbol                 
+C30             1u                 C-USC0603          C0603              CAPACITOR, American symbol                 
+C31             4700p              C-USC0603          C0603              CAPACITOR, American symbol                 
+C_NC            NC                 C-USC0603          C0603              CAPACITOR, American symbol                 
+EN_RX                              PINHD-1X1          1X01               PIN HEADER                                 
+EN_RX_SCHMT     SNGL_SCHMT_BUFR    SNGL_SCHMT_BUFR    SOT-353            SN74LVC1G17DCKR Digikey 296-11934-1-ND     
+LED1            SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC Digikey 492-1265-1-ND             
+LED2            SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC Digikey 492-1265-1-ND             
+LED3            SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC Digikey 492-1265-1-ND             
+LED4            SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC Digikey 492-1265-1-ND             
+LED5            SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC Digikey 492-1265-1-ND             
+LED6            SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC Digikey 492-1265-1-ND             
+LED7            SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC Digikey 492-1265-1-ND             
+LED8            SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC Digikey 492-1265-1-ND             
+LED9            SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC Digikey 492-1265-1-ND             
+LED10           SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC Digikey 492-1265-1-ND             
+MGND1                              PINHD-1X1          1X01               PIN HEADER                                 
+MGND2                              PINHD-1X1          1X01               PIN HEADER                                 
+OPA349          OPA349             OPA349             SOT-23-5           OPA349SA/3K digikey 296-14451-2-ND         
+OPA357          OPA357             OPA357             SOT-23-6           OPA357AIDBVT Digikey 296-13009-1-ND        
+OPA835          OPA835             OPA835             SOT-23-6           OPA835IDBVT Digikey 296-28770-1-ND         
+OPA2357         OPA2357            OPA2357            MSOP10             OPA2357AIDGSR Digikey 296-26261-1-ND       
+PNP_BASE                           PINHD-1X1          1X01               PIN HEADER                                 
+R1              1k                 R-US_R0603         R0603              RESISTOR, American symbol                  
+R2              4.3k               R-US_R0603         R0603              RESISTOR, American symbol                  
+R3              2.7                R-US_R0603         R0603              RESISTOR, American symbol                  
+R4              2.7                R-US_R0603         R0603              RESISTOR, American symbol                  
+R5              2.7                R-US_R0603         R0603              RESISTOR, American symbol                  
+R6              2.7                R-US_R0603         R0603              RESISTOR, American symbol                  
+R7              2.7                R-US_R0603         R0603              RESISTOR, American symbol                  
+R8              2.7                R-US_R0603         R0603              RESISTOR, American symbol                  
+R9              2.7                R-US_R0603         R0603              RESISTOR, American symbol                  
+R10             2.7                R-US_R0603         R0603              RESISTOR, American symbol                  
+R11             2.7                R-US_R0603         R0603              RESISTOR, American symbol                  
+R12             2.7                R-US_R0603         R0603              RESISTOR, American symbol                  
+R13             3.3k               R-US_R0603         R0603              RESISTOR, American symbol                  
+R14             470                R-US_R0603         R0603              RESISTOR, American symbol                  
+R15             180                R-US_R0603         R0603              RESISTOR, American symbol                  
+R16             5.6k               R-US_R0603         R0603              RESISTOR, American symbol                  
+R17             1k                 R-US_R0603         R0603              RESISTOR, American symbol                  
+R18             1k                 R-US_R0603         R0603              RESISTOR, American symbol                  
+R19             4.3k               R-US_R0603         R0603              RESISTOR, American symbol                  
+R20             10k                R-US_R0603         R0603              RESISTOR, American symbol                  
+R21             100k               R-US_R0603         R0603              RESISTOR, American symbol                  
+R22             100k               R-US_R0603         R0603              RESISTOR, American symbol                  
+R23             10k                R-US_R0603         R0603              RESISTOR, American symbol                  
+R24             10k                R-US_R0603         R0603              RESISTOR, American symbol                  
+R25             10k                R-US_R0603         R0603              RESISTOR, American symbol                  
+R26             200k               R-US_R0603         R0603              RESISTOR, American symbol                  
+R27             1Meg               R-US_R0603         R0603              RESISTOR, American symbol                  
+R28             365                R-US_R0603         R0603              RESISTOR, American symbol                  
+R29             121                R-US_R0603         R0603              RESISTOR, American symbol                  
+R30             10Meg              R-US_R0603         R0603              RESISTOR, American symbol                  
+R31             10Meg              R-US_R0603         R0603              RESISTOR, American symbol                  
+R32             330                R-US_R0603         R0603              RESISTOR, American symbol                  
+R33             270k               R-US_R0603         R0603              RESISTOR, American symbol                  
+RVDD                               PINHD-1X1          1X01               PIN HEADER                                 
+RVDD_INDUCTOR   500u               INDUCTOR           0402_INDUCTOR                                                 
+RVDD_LDO        LT1762             LT1762             MSOP8              Digikey: LT1762EMS8#PBF-ND                 
+RXOUT1                             PINHD-1X1          1X01               PIN HEADER                                 
+RXOUT2                             PINHD-1X1          1X01               PIN HEADER                                 
+RXOUT3                             PINHD-1X1          1X01               PIN HEADER                                 
+SMT_PD1         BPW34B_PHOTODIODES BPW34B_PHOTODIODES BPW34B_PHOTODIODES                                            
+SMT_PD2         BPW34B_PHOTODIODES BPW34B_PHOTODIODES BPW34B_PHOTODIODES                                            
+SMT_PD3         BPW34B_PHOTODIODES BPW34B_PHOTODIODES BPW34B_PHOTODIODES                                            
+SMT_PD4         BPW34B_PHOTODIODES BPW34B_PHOTODIODES BPW34B_PHOTODIODES                                            
+SMT_PD5         BPW34B_PHOTODIODES BPW34B_PHOTODIODES BPW34B_PHOTODIODES                                            
+SMT_PD6         BPW34B_PHOTODIODES BPW34B_PHOTODIODES BPW34B_PHOTODIODES                                            
+SMT_PD7         BPW34B_PHOTODIODES BPW34B_PHOTODIODES BPW34B_PHOTODIODES                                            
+SMT_PD8         BPW34B_PHOTODIODES BPW34B_PHOTODIODES BPW34B_PHOTODIODES                                            
+SMT_PD9         BPW34B_PHOTODIODES BPW34B_PHOTODIODES BPW34B_PHOTODIODES                                            
+SMT_PD10        BPW34B_PHOTODIODES BPW34B_PHOTODIODES BPW34B_PHOTODIODES                                            
+TH_PD1          BPW34B_TH          BPW34B_TH          BPW34B_TH                                                     
+TH_PD2          BPW34B_TH          BPW34B_TH          BPW34B_TH                                                     
+TH_PD3          BPW34B_TH          BPW34B_TH          BPW34B_TH                                                     
+TH_PD4          BPW34B_TH          BPW34B_TH          BPW34B_TH                                                     
+TH_PD5          BPW34B_TH          BPW34B_TH          BPW34B_TH                                                     
+TH_PD6          BPW34B_TH          BPW34B_TH          BPW34B_TH                                                     
+TH_PD7          BPW34B_TH          BPW34B_TH          BPW34B_TH                                                     
+TH_PD8          BPW34B_TH          BPW34B_TH          BPW34B_TH                                                     
+TH_PD9          BPW34B_TH          BPW34B_TH          BPW34B_TH                                                     
+TH_PD10         BPW34B_TH          BPW34B_TH          BPW34B_TH                                                     
+TVDD                               PINHD-1X1          1X01               PIN HEADER                                 
+TVDD_INDUCTOR   BLM15HB121SN1      BLM15HB121SN1      0402               EMIFIL (R) Chip Ferrite Bead for GHz Noise 
+TVDD_LDO        LT1083             LT1083             TO247-BV                                                      
+TVDD_NMOS1      FDN335N-NMOS       FDN335N-NMOS       SOT-23             FDN335N digikey FDN335NCT-ND               
+TVDD_NMOS2      FDN335N-NMOS       FDN335N-NMOS       SOT-23             FDN335N digikey FDN335NCT-ND               
+TX_EN                              PINHD-1X1          1X01               PIN HEADER                                 
+TX_EN_LVL_SHFT  LVL-SHFTR          LVL-SHFTR          SOT-23-6           SN74LVC1T45 digikey 296-16843-1-ND         
+TX_EN_SCHMT     SNGL_SCHMT_BUFR    SNGL_SCHMT_BUFR    SOT-353            SN74LVC1G17DCKR Digikey 296-11934-1-ND     
+TX_NPN1         MMBT2222A          MMBT2222A          SOT-23             MMBT2222A-TP Digikey MMBT2222ATPMSCT-ND    
+TX_NPN2         MMBT2222A          MMBT2222A          SOT-23             MMBT2222A-TP Digikey MMBT2222ATPMSCT-ND    
+TX_NPN3         MMBT2222A          MMBT2222A          SOT-23             MMBT2222A-TP Digikey MMBT2222ATPMSCT-ND    
+TX_NPN4         MMBT2222A          MMBT2222A          SOT-23             MMBT2222A-TP Digikey MMBT2222ATPMSCT-ND    
+TX_NPN5         MMBT2222A          MMBT2222A          SOT-23             MMBT2222A-TP Digikey MMBT2222ATPMSCT-ND    
+TX_OUT                             PINHD-1X1          1X01               PIN HEADER                                 
+TX_PNP          MMBT3906-PNP       MMBT3906-PNP       SOT-23             MMBT3906 Digikey MMBT3906FSCT-ND           
+TX_SIG_LVL_SHFT LVL-SHFTR          LVL-SHFTR          SOT-23-6           SN74LVC1T45 digikey 296-16843-1-ND         
+TX_SIG_SCHMT    SNGL_SCHMT_BUFR    SNGL_SCHMT_BUFR    SOT-353            SN74LVC1G17DCKR Digikey 296-11934-1-ND     
+VREF                               PINHD-1X1          1X01               PIN HEADER                                 
