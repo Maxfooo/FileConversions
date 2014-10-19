@@ -1,140 +1,37 @@
 Partlist
 
-Exported from Pre_Alpha_Muscle.sch at 10/18/2014 10:49:23 PM
+Exported from LED_Vest.sch at 18-Oct-14 10:56:33 PM
 
-EAGLE Version 6.5.0 Copyright (c) 1988-2013 CadSoft
+EAGLE Version 6.4.0 Copyright (c) 1988-2013 CadSoft
 
 Assembly variant: 
 
-Part            Value              Device             Package            Library          Sheet
+Part      Value                       Device                      Package              Library            Sheet
 
-5V_OUT                             PINHD-1X2          1X02               pinhead          3
-BRAIN_TO_MUSCLE                    PINHD-1X13         1X13               pinhead          3
-C1              20p                C-USC0603          C0603              rcl              1
-C2              4700p              C-USC0603          C0603              rcl              2
-C3              4700p              C-USC0603          C0603              rcl              2
-C4              25n                C-USC0603          C0603              rcl              2
-C5              10n                C-USC0603          C0603              rcl              2
-C6              10n                C-USC0603          C0603              rcl              2
-C7              2n                 C-USC0603          C0603              rcl              2
-C8              470p               C-USC0603          C0603              rcl              2
-C9              10n                C-USC0603          C0603              rcl              2
-C10             10n                C-USC0603          C0603              rcl              1
-C11             10n                C-USC0603          C0603              rcl              1
-C12             10n                C-USC0603          C0603              rcl              1
-C13             10n                C-USC0603          C0603              rcl              1
-C14             10n                C-USC0603          C0603              rcl              2
-C15             10n                C-USC0603          C0603              rcl              1
-C16             10n                C-USC0603          C0603              rcl              1
-C17             10n                C-USC0603          C0603              rcl              1
-C18             10n                C-USC0603          C0603              rcl              2
-C19             10n                C-USC0603          C0603              rcl              2
-C20             100n               C-USC0603          C0603              rcl              3
-C21             1n                 C-USC0603          C0603              rcl              3
-C22             10u                C-USC0603          C0603              rcl              3
-C23             10u                C-USC0603          C0603              rcl              3
-C24             100n               C-USC0603          C0603              rcl              3
-C25             10u                C-USC0603          C0603              rcl              3
-C26             1p                 C-USC0603          C0603              rcl              2
-C27             100n               C-USC0603          C0603              rcl              2
-C28             1u                 C-USC0603          C0603              rcl              2
-C29             1u                 C-USC0603          C0603              rcl              2
-C30             1u                 C-USC0603          C0603              rcl              2
-C31             4700p              C-USC0603          C0603              rcl              2
-C_NC            NC                 C-USC0603          C0603              rcl              2
-EN_RX                              PINHD-1X1          1X01               pinhead          2
-EN_RX_SCHMT     SNGL_SCHMT_BUFR    SNGL_SCHMT_BUFR    SOT-353            Alpha_Muscle_Lib 2
-LED1            SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC-LED       Alpha_Muscle_Lib 1
-LED2            SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC-LED       Alpha_Muscle_Lib 1
-LED3            SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC-LED       Alpha_Muscle_Lib 1
-LED4            SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC-LED       Alpha_Muscle_Lib 1
-LED5            SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC-LED       Alpha_Muscle_Lib 1
-LED6            SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC-LED       Alpha_Muscle_Lib 1
-LED7            SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC-LED       Alpha_Muscle_Lib 1
-LED8            SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC-LED       Alpha_Muscle_Lib 1
-LED9            SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC-LED       Alpha_Muscle_Lib 1
-LED10           SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC-LED       Alpha_Muscle_Lib 1
-MGND1                              PINHD-1X1          1X01               pinhead          1
-MGND2                              PINHD-1X1          1X01               pinhead          1
-OPA349          OPA349             OPA349             SOT-23-5           Alpha_Muscle_Lib 2
-OPA357          OPA357             OPA357             SOT-23-6           Alpha_Muscle_Lib 2
-OPA835          OPA835             OPA835             SOT-23-6           Alpha_Muscle_Lib 1
-OPA2357         OPA2357            OPA2357            MSOP10             Alpha_Muscle_Lib 2
-PNP_BASE                           PINHD-1X1          1X01               pinhead          1
-R1              1k                 R-US_R0603         R0603              rcl              1
-R2              4.3k               R-US_R0603         R0603              rcl              1
-R3              2.7                R-US_R0603         R0603              rcl              1
-R4              2.7                R-US_R0603         R0603              rcl              1
-R5              2.7                R-US_R0603         R0603              rcl              1
-R6              2.7                R-US_R0603         R0603              rcl              1
-R7              2.7                R-US_R0603         R0603              rcl              1
-R8              2.7                R-US_R0603         R0603              rcl              1
-R9              2.7                R-US_R0603         R0603              rcl              1
-R10             2.7                R-US_R0603         R0603              rcl              1
-R11             2.7                R-US_R0603         R0603              rcl              1
-R12             2.7                R-US_R0603         R0603              rcl              1
-R13             3.3k               R-US_R0603         R0603              rcl              1
-R14             470                R-US_R0603         R0603              rcl              2
-R15             180                R-US_R0603         R0603              rcl              2
-R16             5.6k               R-US_R0603         R0603              rcl              2
-R17             1k                 R-US_R0603         R0603              rcl              2
-R18             1k                 R-US_R0603         R0603              rcl              2
-R19             4.3k               R-US_R0603         R0603              rcl              2
-R20             10k                R-US_R0603         R0603              rcl              2
-R21             100k               R-US_R0603         R0603              rcl              2
-R22             100k               R-US_R0603         R0603              rcl              2
-R23             10k                R-US_R0603         R0603              rcl              1
-R24             10k                R-US_R0603         R0603              rcl              1
-R25             10k                R-US_R0603         R0603              rcl              2
-R26             200k               R-US_R0603         R0603              rcl              3
-R27             1Meg               R-US_R0603         R0603              rcl              3
-R28             365                R-US_R0603         R0603              rcl              3
-R29             121                R-US_R0603         R0603              rcl              3
-R30             10Meg              R-US_R0603         R0603              rcl              2
-R31             10Meg              R-US_R0603         R0603              rcl              2
-R32             330                R-US_R0603         R0603              rcl              2
-R33             270k               R-US_R0603         R0603              rcl              2
-RVDD                               PINHD-1X1          1X01               pinhead          3
-RVDD_INDUCTOR   500u               INDUCTOR           0402_INDUCTOR      Alpha_Muscle_Lib 3
-RVDD_LDO        LT1762             LT1762             MSOP8              Alpha_Muscle_Lib 3
-RXOUT1                             PINHD-1X1          1X01               pinhead          2
-RXOUT2                             PINHD-1X1          1X01               pinhead          2
-RXOUT3                             PINHD-1X1          1X01               pinhead          2
-SMT_PD1         BPW34B_PHOTODIODES BPW34B_PHOTODIODES BPW34B_PHOTODIODES Alpha_Muscle_Lib 2
-SMT_PD2         BPW34B_PHOTODIODES BPW34B_PHOTODIODES BPW34B_PHOTODIODES Alpha_Muscle_Lib 2
-SMT_PD3         BPW34B_PHOTODIODES BPW34B_PHOTODIODES BPW34B_PHOTODIODES Alpha_Muscle_Lib 2
-SMT_PD4         BPW34B_PHOTODIODES BPW34B_PHOTODIODES BPW34B_PHOTODIODES Alpha_Muscle_Lib 2
-SMT_PD5         BPW34B_PHOTODIODES BPW34B_PHOTODIODES BPW34B_PHOTODIODES Alpha_Muscle_Lib 2
-SMT_PD6         BPW34B_PHOTODIODES BPW34B_PHOTODIODES BPW34B_PHOTODIODES Alpha_Muscle_Lib 2
-SMT_PD7         BPW34B_PHOTODIODES BPW34B_PHOTODIODES BPW34B_PHOTODIODES Alpha_Muscle_Lib 2
-SMT_PD8         BPW34B_PHOTODIODES BPW34B_PHOTODIODES BPW34B_PHOTODIODES Alpha_Muscle_Lib 2
-SMT_PD9         BPW34B_PHOTODIODES BPW34B_PHOTODIODES BPW34B_PHOTODIODES Alpha_Muscle_Lib 2
-SMT_PD10        BPW34B_PHOTODIODES BPW34B_PHOTODIODES BPW34B_PHOTODIODES Alpha_Muscle_Lib 2
-TH_PD1          BPW34B_TH          BPW34B_TH          BPW34B_TH          Alpha_Muscle_Lib 2
-TH_PD2          BPW34B_TH          BPW34B_TH          BPW34B_TH          Alpha_Muscle_Lib 2
-TH_PD3          BPW34B_TH          BPW34B_TH          BPW34B_TH          Alpha_Muscle_Lib 2
-TH_PD4          BPW34B_TH          BPW34B_TH          BPW34B_TH          Alpha_Muscle_Lib 2
-TH_PD5          BPW34B_TH          BPW34B_TH          BPW34B_TH          Alpha_Muscle_Lib 2
-TH_PD6          BPW34B_TH          BPW34B_TH          BPW34B_TH          Alpha_Muscle_Lib 2
-TH_PD7          BPW34B_TH          BPW34B_TH          BPW34B_TH          Alpha_Muscle_Lib 2
-TH_PD8          BPW34B_TH          BPW34B_TH          BPW34B_TH          Alpha_Muscle_Lib 2
-TH_PD9          BPW34B_TH          BPW34B_TH          BPW34B_TH          Alpha_Muscle_Lib 2
-TH_PD10         BPW34B_TH          BPW34B_TH          BPW34B_TH          Alpha_Muscle_Lib 2
-TVDD                               PINHD-1X1          1X01               pinhead          3
-TVDD_INDUCTOR   BLM15HB121SN1      BLM15HB121SN1      0402               inductors        3
-TVDD_LDO        LT1083             LT1083             TO247-BV           Alpha_Muscle_Lib 3
-TVDD_NMOS1      FDN335N-NMOS       FDN335N-NMOS       SOT-23             Alpha_Muscle_Lib 3
-TVDD_NMOS2      FDN335N-NMOS       FDN335N-NMOS       SOT-23             Alpha_Muscle_Lib 3
-TX_EN                              PINHD-1X1          1X01               pinhead          1
-TX_EN_LVL_SHFT  LVL-SHFTR          LVL-SHFTR          SOT-23-6           Alpha_Muscle_Lib 1
-TX_EN_SCHMT     SNGL_SCHMT_BUFR    SNGL_SCHMT_BUFR    SOT-353            Alpha_Muscle_Lib 1
-TX_NPN1         MMBT2222A          MMBT2222A          SOT-23             Alpha_Muscle_Lib 1
-TX_NPN2         MMBT2222A          MMBT2222A          SOT-23             Alpha_Muscle_Lib 1
-TX_NPN3         MMBT2222A          MMBT2222A          SOT-23             Alpha_Muscle_Lib 1
-TX_NPN4         MMBT2222A          MMBT2222A          SOT-23             Alpha_Muscle_Lib 1
-TX_NPN5         MMBT2222A          MMBT2222A          SOT-23             Alpha_Muscle_Lib 1
-TX_OUT                             PINHD-1X1          1X01               pinhead          1
-TX_PNP          MMBT3906-PNP       MMBT3906-PNP       SOT-23             Alpha_Muscle_Lib 1
-TX_SIG_LVL_SHFT LVL-SHFTR          LVL-SHFTR          SOT-23-6           Alpha_Muscle_Lib 1
-TX_SIG_SCHMT    SNGL_SCHMT_BUFR    SNGL_SCHMT_BUFR    SOT-353            Alpha_Muscle_Lib 1
-VREF                               PINHD-1X1          1X01               pinhead          2
+100_OHM1                              4814P-T01                   4814P                resistor-bourns    1
+100_OHM2                              4814P-T01                   4814P                resistor-bourns    1
+A0_A3                                 MA04-1                      MA04-1               con-lstb           1
+ARD_PRGMR                             MA06-1                      MA06-1               con-lstb           1
+GND                                   2,54/1,1                    2,54/1,1             wirepad            1
+PWM1                                  2,54/1,1                    2,54/1,1             wirepad            1
+PWM2                                  2,54/1,1                    2,54/1,1             wirepad            1
+RAIL                                  MA04-1                      MA04-1               con-lstb           1
+RST                                   2,54/1,1                    2,54/1,1             wirepad            1
+RST2                                  2,54/1,1                    2,54/1,1             wirepad            1
+RX1                                   2,54/1,1                    2,54/1,1             wirepad            1
+TANTALUM                              CC1210                      C1210                eagle-ltspice      1
+TX1                                   2,54/1,1                    2,54/1,1             wirepad            1
+U$1       IRF8915TRPBF                IRF8915TRPBF                SO8_SOIC8            IRF_DUAL_NMOS      1
+U$2       IRF8915TRPBF                IRF8915TRPBF                SO8_SOIC8            IRF_DUAL_NMOS      1
+U$3       IRF8915TRPBF                IRF8915TRPBF                SO8_SOIC8            IRF_DUAL_NMOS      1
+U$4       IRF8915TRPBF                IRF8915TRPBF                SO8_SOIC8            IRF_DUAL_NMOS      1
+U$5       IRF8915TRPBF                IRF8915TRPBF                SO8_SOIC8            IRF_DUAL_NMOS      1
+U$6       1X6_1.22MM_PITCH_PADS_MOLEX 1X6_1.22MM_PITCH_PADS_MOLEX 1X6_1.2MM_PITCH_PADS LED_VEST_MATERIALS 1
+U$7       1X6_1.22MM_PITCH_PADS_MOLEX 1X6_1.22MM_PITCH_PADS_MOLEX 1X6_1.2MM_PITCH_PADS LED_VEST_MATERIALS 1
+U$8       ARDUINO_MINI_PRO_5V         ARDUINO_MINI_PRO_5V         ARDUINO_PRO_MINI     LED_VEST_MATERIALS 1
+VCC2                                  2,54/1,1                    2,54/1,1             wirepad            1
+XTRA_R1                               2,54/1,1                    2,54/1,1             wirepad            1
+XTRA_R2                               2,54/1,1                    2,54/1,1             wirepad            1
+XTRA_R3                               2,54/1,1                    2,54/1,1             wirepad            1
+XTRA_R4                               2,54/1,1                    2,54/1,1             wirepad            1
+Z11V      BZX84CSMD                   BZX84CSMD                   TO236                diode              1
