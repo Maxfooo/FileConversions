@@ -1,50 +1,12 @@
-Partlist exported from C:/SVN/Alpha/Eagle/Designs/Muscle/Pre_Alpha_Muscle_Board/Pre_Alpha_Muscle.sch at 10/17/2014 1:38:57 PM
+Partlist exported from C:/Users/Max Ruiz/Documents/eagle/LED_Vest/LED_Vest.sch at 18-Oct-14 10:58:07 PM
 
-Qty Value              Device             Package            Parts                                                                                     Description                                
-12                     PINHD-1X1          1X01               EN_RX, MGND1, MGND2, PNP_BASE, RVDD, RXOUT1, RXOUT2, RXOUT3, TVDD, TX_EN, TX_OUT, VREF    PIN HEADER                                 
-1                      PINHD-1X13         1X13               BRAIN_TO_MUSCLE                                                                           PIN HEADER                                 
-1                      PINHD-1X2          1X02               5V_OUT                                                                                    PIN HEADER                                 
-2   100k               R-US_R0603         R0603              R21, R22                                                                                  RESISTOR, American symbol                  
-3   100n               C-USC0603          C0603              C20, C24, C27                                                                             CAPACITOR, American symbol                 
-2   10Meg              R-US_R0603         R0603              R30, R31                                                                                  RESISTOR, American symbol                  
-4   10k                R-US_R0603         R0603              R20, R23, R24, R25                                                                        RESISTOR, American symbol                  
-13  10n                C-USC0603          C0603              C5, C6, C9, C10, C11, C12, C13, C14, C15, C16, C17, C18, C19                              CAPACITOR, American symbol                 
-3   10u                C-USC0603          C0603              C22, C23, C25                                                                             CAPACITOR, American symbol                 
-1   121                R-US_R0603         R0603              R29                                                                                       RESISTOR, American symbol                  
-1   180                R-US_R0603         R0603              R15                                                                                       RESISTOR, American symbol                  
-1   1Meg               R-US_R0603         R0603              R27                                                                                       RESISTOR, American symbol                  
-3   1k                 R-US_R0603         R0603              R1, R17, R18                                                                              RESISTOR, American symbol                  
-1   1n                 C-USC0603          C0603              C21                                                                                       CAPACITOR, American symbol                 
-1   1p                 C-USC0603          C0603              C26                                                                                       CAPACITOR, American symbol                 
-3   1u                 C-USC0603          C0603              C28, C29, C30                                                                             CAPACITOR, American symbol                 
-10  2.7                R-US_R0603         R0603              R3, R4, R5, R6, R7, R8, R9, R10, R11, R12                                                 RESISTOR, American symbol                  
-1   200k               R-US_R0603         R0603              R26                                                                                       RESISTOR, American symbol                  
-1   20p                C-USC0603          C0603              C1                                                                                        CAPACITOR, American symbol                 
-1   25n                C-USC0603          C0603              C4                                                                                        CAPACITOR, American symbol                 
-1   270k               R-US_R0603         R0603              R33                                                                                       RESISTOR, American symbol                  
-1   2n                 C-USC0603          C0603              C7                                                                                        CAPACITOR, American symbol                 
-1   3.3k               R-US_R0603         R0603              R13                                                                                       RESISTOR, American symbol                  
-1   330                R-US_R0603         R0603              R32                                                                                       RESISTOR, American symbol                  
-1   365                R-US_R0603         R0603              R28                                                                                       RESISTOR, American symbol                  
-2   4.3k               R-US_R0603         R0603              R2, R19                                                                                   RESISTOR, American symbol                  
-1   470                R-US_R0603         R0603              R14                                                                                       RESISTOR, American symbol                  
-3   4700p              C-USC0603          C0603              C2, C3, C31                                                                               CAPACITOR, American symbol                 
-1   470p               C-USC0603          C0603              C8                                                                                        CAPACITOR, American symbol                 
-1   5.6k               R-US_R0603         R0603              R16                                                                                       RESISTOR, American symbol                  
-1   500u               INDUCTOR           0402_INDUCTOR      RVDD_INDUCTOR                                                                                                                        
-1   BLM15HB121SN1      BLM15HB121SN1      0402               TVDD_INDUCTOR                                                                             EMIFIL (R) Chip Ferrite Bead for GHz Noise 
-10  BPW34B_PHOTODIODES BPW34B_PHOTODIODES BPW34B_PHOTODIODES SMT_PD1, SMT_PD2, SMT_PD3, SMT_PD4, SMT_PD5, SMT_PD6, SMT_PD7, SMT_PD8, SMT_PD9, SMT_PD10                                            
-10  BPW34B_TH          BPW34B_TH          BPW34B_TH          TH_PD1, TH_PD2, TH_PD3, TH_PD4, TH_PD5, TH_PD6, TH_PD7, TH_PD8, TH_PD9, TH_PD10                                                      
-2   FDN335N-NMOS       FDN335N-NMOS       SOT-23             TVDD_NMOS1, TVDD_NMOS2                                                                    FDN335N digikey FDN335NCT-ND               
-1   LT1083             LT1083             TO247-BV           TVDD_LDO                                                                                                                             
-1   LT1762             LT1762             MSOP8              RVDD_LDO                                                                                  Digikey: LT1762EMS8#PBF-ND                 
-2   LVL-SHFTR          LVL-SHFTR          SOT-23-6           TX_EN_LVL_SHFT, TX_SIG_LVL_SHFT                                                           SN74LVC1T45 digikey 296-16843-1-ND         
-5   MMBT2222A          MMBT2222A          SOT-23             TX_NPN1, TX_NPN2, TX_NPN3, TX_NPN4, TX_NPN5                                               MMBT2222A-TP Digikey MMBT2222ATPMSCT-ND    
-1   MMBT3906-PNP       MMBT3906-PNP       SOT-23             TX_PNP                                                                                    MMBT3906 Digikey MMBT3906FSCT-ND           
-1   NC                 C-USC0603          C0603              C_NC                                                                                      CAPACITOR, American symbol                 
-1   OPA2357            OPA2357            MSOP10             OPA2357                                                                                   OPA2357AIDGSR Digikey 296-26261-1-ND       
-1   OPA349             OPA349             SOT-23-5           OPA349                                                                                    OPA349SA/3K digikey 296-14451-2-ND         
-1   OPA357             OPA357             SOT-23-6           OPA357                                                                                    OPA357AIDBVT Digikey 296-13009-1-ND        
-1   OPA835             OPA835             SOT-23-6           OPA835                                                                                    OPA835IDBVT Digikey 296-28770-1-ND         
-10  SMP6-BWC-LED       SMP6-BWC-LED       SMP6-BWC-LED       LED1, LED2, LED3, LED4, LED5, LED6, LED7, LED8, LED9, LED10                               SMP6-BWC Digikey 492-1265-1-ND             
-3   SNGL_SCHMT_BUFR    SNGL_SCHMT_BUFR    SOT-353            EN_RX_SCHMT, TX_EN_SCHMT, TX_SIG_SCHMT                                                    SN74LVC1G17DCKR Digikey 296-11934-1-ND     
+Qty Value                       Device                      Package              Parts                                                                          Description                MF           MPN             OC_FARNELL OC_NEWARK SPICEMODEL SPICEPREFIX
+12                              2,54/1,1                    2,54/1,1             GND, PWM1, PWM2, RST, RST2, RX1, TX1, VCC2, XTRA_R1, XTRA_R2, XTRA_R3, XTRA_R4 THROUGH-HOLE PAD                                                                                   
+2                               4814P-T01                   4814P                100_OHM1, 100_OHM2                                                             BOURNS RESISTOR NETWORK    BOURNS, INC. 4814P-T01-104LF 9357386    33K0526                         
+1                               CC1210                      C1210                TANTALUM                                                                       CAPACITOR, European symbol                                                   NONE       C          
+2                               MA04-1                      MA04-1               A0_A3, RAIL                                                                    PIN HEADER                                              unknown    unknown                         
+1                               MA06-1                      MA06-1               ARD_PRGMR                                                                      PIN HEADER                                              unknown    unknown                         
+2   1X6_1.22MM_PITCH_PADS_MOLEX 1X6_1.22MM_PITCH_PADS_MOLEX 1X6_1.2MM_PITCH_PADS U$6, U$7                                                                                                                                                                          
+1   ARDUINO_MINI_PRO_5V         ARDUINO_MINI_PRO_5V         ARDUINO_PRO_MINI     U$8                                                                                                                                                                               
+1   BZX84CSMD                   BZX84CSMD                   TO236                Z11V                                                                           Z DIODE                                                                                            
+5   IRF8915TRPBF                IRF8915TRPBF                SO8_SOIC8            U$1, U$2, U$3, U$4, U$5                                                                                                                                                           
