@@ -192,7 +192,7 @@ class TxtToCSV(Frame):
         if sz > 100:
             sz = sz/2 + (sz/2-50)
             self.log.pack_forget()
-            self.log = Label(self.logFrame, textvariable=self.logVar, width=sz)
+            self.log = Label(self.logFrame, textvariable=self.logVar, width=int(sz))
             self.log.pack(side='bottom', anchor='s')
         try:
             fName = re.findall(r'/([\w]+\.{0})'.format(fType), string)[0]
