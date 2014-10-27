@@ -33,6 +33,30 @@ class TxtToCSV(Frame):
         self.initGUI()
 
     def toCSV(self, file, csvFile, mode=0):
+        def commaVals(arr, mode = 0):
+            l = len(arr)
+            c = 0
+            a = ''
+            for i in range(len(arr)):
+                if re.match(r'[\w]+,', arr[i], re.I) != None: #need to fix for res and caps
+                    c = c + 1
+            for i in range(c+1):
+                if i<(c+1):
+                    a = a + arr[i] + '/'
+                else:
+                    a = a + arr[i]
+            if mode == 0:
+                return a
+            elif mode == 1:
+                newStrt = c+2
+                b = ''
+                if l > newStrt:
+                    for i in range(l-newStrt-1):
+                        cma = re.match(r'[\w],')
+            
+            
+            
+            
         if mode == 0:
             j = ''
             for line in file:
@@ -109,11 +133,22 @@ class TxtToCSV(Frame):
                 csvFile.close()                
                             
             elif len(p) > len(k):
+                j = ''
+                for line in file:
+                    pinhd = re.findall(r'(PINHD-[\w]+)', str(line))
+                    words = line.split()
+                    l = len(words)
+                    if len(pinhd) == 0:
+                        
+                    else:
+                        a = [str(words[0]), str(words[1]), str(words[2]), str(words[3])]
+                        
                 pass
             else:
                 pass
         else:
             pass
+        
 
 
     def getPartList(self):
