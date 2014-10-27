@@ -37,9 +37,13 @@ class TxtToCSV(Frame):
             l = len(arr)
             c = 0
             a = ''
+            
             for i in range(len(arr)):
-                if re.match(r'[\w]+,', arr[i], re.I) != None: #need to fix for res and caps
-                    c = c + 1
+                mtch = re.match(r'([\w]+),', arr[i], re.I)
+                if mtch != None:
+                    mtch = mtch.group()
+                    if mtch != 'RESISTOR' or mtch != 'CAPACITOR':
+                        c = c + 1
             for i in range(c+1):
                 if i<(c+1):
                     a = a + arr[i] + '/'
@@ -52,10 +56,13 @@ class TxtToCSV(Frame):
                 b = ''
                 if l > newStrt:
                     for i in range(l-newStrt-1):
-                        cma = re.match(r'[\w],')
-            
-            
-            
+                        cma = re.match(r'([\w]),', arr[newStrt + i]).group()
+                        if cma != None:
+                            b = b + cma + ' '
+                        else:
+                            b = b + arr[newStrt + i]
+                rtn = [a, b]
+                return rtn
             
         if mode == 0:
             j = ''
@@ -132,18 +139,34 @@ class TxtToCSV(Frame):
                 csvFile.write(j)
                 csvFile.close()                
                             
-            elif len(p) > len(k):
+            elif len(p) > len(k): # DOES NOT WORK YET
                 j = ''
                 for line in file:
                     pinhd = re.findall(r'(PINHD-[\w]+)', str(line))
                     words = line.split()
                     l = len(words)
                     if len(pinhd) == 0:
-                        
+                        a = ['']
+                        pass # DO SOMETHING HERE
                     else:
                         a = [str(words[0]), str(words[1]), str(words[2]), str(words[3])]
+                        sub = words[4:(l-1)]
+                        b = commaVals(sub, mode=1)
+                        a.append(str(b[0]))
+                        a.append(str(b[1]))
+                        a.append('\n')
+                la = len(a)
                         
-                pass
+                for i in range(la):
+                        if words[i] != '\n':
+                            j = j + str(words[i]) + ','
+                        else:
+                            j = j + str(words[i])
+                        
+                file.close()
+                csvFile.write(j)
+                csvFile.close() 
+
             else:
                 pass
         else:
