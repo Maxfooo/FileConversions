@@ -8,6 +8,69 @@ import re
 from tkinter import *
 from tkinter import filedialog
 
+def parseBOMValue(str1):
+    flg = 0
+    try:
+        a = str1.index(',')
+        b = str1.replace(', ','/')
+        flg = 1
+    except ValueError:
+        pass
+    c = re.findall(r' [a-zA-Z]+ [a-zA-Z]+', str1)
+    d = re.findall(r'[a-zA-Z]+: [\w\W]+', str1)
+    if c != None:
+        if flg == 1:
+            for sub in c:
+                sub1 = sub.strip()
+                sub2 = sub1.replace(' ', '-')
+                e = b.replace(sub1, sub2)
+                flg = 2
+        else:
+            for sub in c:
+                sub1 = sub.strip()
+                sub2 = sub1.replace(' ', '-')
+                e = str1.replace(sub1, sub2)
+                flg = 2
+    if d != None:
+        if flg == 2:
+            for sub in d:
+                sub1 = sub.strip()
+                sub2 = sub1.replace(' ', '-')
+                f = e.replace(sub, sub2)
+                flg = 3
+        elif flg == 1:
+            for sub in d:
+                sub1 = sub.strip()
+                sub2 = sub1.replace(' ', '-')
+                f = b.replace(sub, sub2)
+                flg = 3
+        else:
+            for sub in d:
+                sub1 = sub.strip()
+                sub2 = sub1.replace(' ', '-')
+                f = str1.replace(sub, sub2)
+                flg = 3
+    if flg == 0:
+        return str1
+    elif flg == 1:
+        return b
+    elif flg == 2:
+        return e
+    elif flg == 3:
+        return f
+
+
+def strToCSV(str1):
+    arr1 = str1.split()
+    if len(arr1) < 6:
+        arr1.insert(2,'N/A')
+    str2 = ''
+    for j in range(len(arr1)):
+        if j != len(arr1)-1:
+            str2 = str2 + arr1[j] + ','
+        else:
+            str2 = str2 + arr1[j] + '\n'
+    return str2
 
 class TxtToCSV(Frame):
 
@@ -33,37 +96,6 @@ class TxtToCSV(Frame):
         self.initGUI()
 
     def toCSV(self, file, csvFile, mode=0):
-        def commaVals(arr, mode = 0):
-            l = len(arr)
-            c = 0
-            a = ''
-            
-            for i in range(len(arr)):
-                mtch = re.match(r'([\w]+),', arr[i], re.I)
-                if mtch != None:
-                    mtch = mtch.group()
-                    if mtch != 'RESISTOR' or mtch != 'CAPACITOR':
-                        c = c + 1
-            for i in range(c+1):
-                if i<(c+1):
-                    a = a + arr[i] + '/'
-                else:
-                    a = a + arr[i]
-            if mode == 0:
-                return a
-            elif mode == 1:
-                newStrt = c+2
-                b = ''
-                if l > newStrt:
-                    for i in range(l-newStrt-1):
-                        cma = re.match(r'([\w]),', arr[newStrt + i]).group()
-                        if cma != None:
-                            b = b + cma + ' '
-                        else:
-                            b = b + arr[newStrt + i]
-                rtn = [a, b]
-                return rtn
-            
         if mode == 0:
             j = ''
             for line in file:
@@ -75,7 +107,7 @@ class TxtToCSV(Frame):
                         j = j + str(words[i]) + ','
                     else:
                         j = j + str(words[i])
-    
+
             file.close()
             csvFile.write(j)
             csvFile.close()
@@ -87,9 +119,9 @@ class TxtToCSV(Frame):
                 t0 = file.readline()
                 k = re.findall(r'(Part[\s]+Value)',t0)
                 p = re.findall(r'(Qty Value[\s]+Device)',t0)
-                
-            
-            if len(k) > len(p):
+
+
+            if len(k) > len(p): # Part type BOM file
                 for line in file:
                     words = line.split()
                     l = len(words)
@@ -111,9 +143,9 @@ class TxtToCSV(Frame):
                         words1.pop()
                         words.append('\n')
                         words = words1
-                        
+
                     if len(words) > 5:
-                        
+
                         for n in range(4,l):
                             m = m + words[n] + ' '
                         for n in range(4,l):
@@ -125,53 +157,38 @@ class TxtToCSV(Frame):
                             m = m1[0] + ' ' + m2[0]
 
                         words.append(m)
-                        
+
                     words.append('\n')
                     l = len(words)
-                    
+
                     for i in range(l):
                         if words[i] != '\n':
                             j = j + str(words[i]) + ','
                         else:
                             j = j + str(words[i])
-                            
-                file.close()
-                csvFile.write(j)
-                csvFile.close()                
-                            
-            elif len(p) > len(k): # DOES NOT WORK YET
-                j = ''
-                for line in file:
-                    pinhd = re.findall(r'(PINHD-[\w]+)', str(line))
-                    words = line.split()
-                    l = len(words)
-                    if len(pinhd) == 0:
-                        a = ['']
-                        pass # DO SOMETHING HERE
-                    else:
-                        a = [str(words[0]), str(words[1]), str(words[2]), str(words[3])]
-                        sub = words[4:(l-1)]
-                        b = commaVals(sub, mode=1)
-                        a.append(str(b[0]))
-                        a.append(str(b[1]))
-                        a.append('\n')
-                la = len(a)
-                        
-                for i in range(la):
-                        if words[i] != '\n':
-                            j = j + str(words[i]) + ','
-                        else:
-                            j = j + str(words[i])
-                        
-                file.close()
-                csvFile.write(j)
-                csvFile.close() 
 
+                file.close()
+                csvFile.write(j)
+                csvFile.close()
+
+            elif len(p) > len(k): # Value type BOM File
+                csvStr = 'Qty,Value,Device,Package,Parts,Description\n'
+                # csvStr will be finished product to write to .csv file
+                rows = []
+                for line in file:
+                    rows.append(line)
+                for i in range(len(rows)):
+                    str1 = str(rows[i])
+                    str2 = parseBOMValue(str1)
+                    str3 = strToCSV(str2)
+                    csvStr = csvStr + str3
+                file.close()
+                csvFile.write(csvStr)
+                csvFile.close()
             else:
                 pass
         else:
             pass
-        
 
 
     def getPartList(self):
@@ -203,7 +220,7 @@ class TxtToCSV(Frame):
             if nFileCsv != None:
                 self.parseFileName(str(nFileCsv), fType='csv', mode=1)
                 self.toCSV(nFileTxt, nFileCsv)
-                
+
     def getBOMList(self):
         bFileTxt = filedialog.askopenfile(mode='r', **self.file_opt)
         if bFileTxt != None:
@@ -232,7 +249,7 @@ class TxtToCSV(Frame):
         netFrame.pack(side='left')
         b3 = Button(netFrame, text='Select Net File', command=self.getNetList)
         b3.pack(side='left')
-        
+
         bomFrame = LabelFrame(bF, text='BOM List')
         bomFrame.pack(side='left')
         b4 = Button(bomFrame, text='Select BOM File', command=self.getBOMList)
@@ -265,8 +282,8 @@ class TxtToCSV(Frame):
             self.logThis = 'Failed to load/save file'
 
         self.logVar.set(self.logThis)
-        
-    
+
+
 
 root = Tk()
 app = TxtToCSV(master=root)
