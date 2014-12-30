@@ -8,7 +8,9 @@ import re
 from tkinter import *
 from tkinter import filedialog
 
-def parseBOMValue(str1):
+def parseBOMValue(str1): 
+    # This method is used to parse Values type BOM
+    # Values type BOM's are special because they have unwanted commas in them
     flg = 0
     try:
         a = str1.index(',')
@@ -96,9 +98,13 @@ class TxtToCSV(Frame):
         self.initGUI()
 
     def toCSV(self, file, csvFile, mode=0):
-        if mode == 0:
+        #file is the opened string file stream that is to be parsed
+        #csvFile is the opened string file stream that csv's from parsed file
+        #mode distinguishes Eagle Generated Lists from Eagle Generated BOM's        
+        
+        if mode == 0: # Mode==0 is a list
             j = ''
-            for line in file:
+            for line in file: #Generic parsing for all list files
                 words = line.split()
                 words.append('\n')
                 l = len(words)
@@ -111,8 +117,13 @@ class TxtToCSV(Frame):
             file.close()
             csvFile.write(j)
             csvFile.close()
-        elif mode == 1:
+            
+            
+        elif mode == 1: # Mode==1 is a BOM file
+            
             j = ''
+            
+            # Initial Automatic determination of Parts versus Values type BOM
             k = []
             p = []
             while len(k) == 0 and len(p) == 0:
@@ -190,7 +201,7 @@ class TxtToCSV(Frame):
         else:
             pass
 
-
+    # below are methods for when the buttons are clicked
     def getPartList(self):
         pFileTxt = filedialog.askopenfile(mode='r', **self.file_opt)
         if pFileTxt != None:
@@ -265,7 +276,7 @@ class TxtToCSV(Frame):
         wordArray = re.findall(r'(\w)', string)
         sz = len(wordArray)
         if sz > 100:
-            sz = sz/2 + (sz/2-50)
+            sz = sz/2 + (sz/2-50) # Trial and error found correct sizing
             self.log.pack_forget()
             self.log = Label(self.logFrame, textvariable=self.logVar, width=int(sz))
             self.log.pack(side='bottom', anchor='s')
