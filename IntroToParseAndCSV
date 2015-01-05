@@ -1,0 +1,149 @@
+Getting Started
+
+Python.exe – the programming software
+•	I use Python3.4 at the lab, just to stay up to date on the available features, the following is the link to download Python3.4:
+•	https://www.python.org/downloads/release/python-342/
+•	If you scroll to the bottom there is a section called “Files”. Select which installer works with your computer
+
+Liclipse – python programming environment
+•	Liclipse is a very fast route to obtain modern environment to program in python. It is a break off from Eclipse, but comes pre-installed with PyDev so you can start programming right away.
+•	http://www.liclipse.com/
+•	When you click download it will actually share the folders that contain the files with you via google drive, then from there you will download the appropriate files for Liclipse.
+
+Tutorials Point – Excellent resource page for Python
+•	Tutorials point has help on many different languages and I have found through teaching myself Python that it has one of the best guides for learning Python out of many different sites.
+
+Regular Expression (RegEx) – Resource
+•	Regular expressions are a means of generalizing statements and extracting parts of text that match the generalizations.
+•	https://developers.google.com/edu/python/regular-expressions?csw=1
+•	This link from google doesn’t cover the entire deal on regex but it is a short simple guide that helps a lot.
+
+Example Project
+
+Problem Definition
+
+This example will help you focus your learning on some of the skills required for the task at hand.
+
+The project will have you ask a user for a file name to open which will contain some garbled information. You will then need to open this file, extract the information, perform some manipulation of this information, and then write it to two types of separate files: “.txt” and “.csv”. The “.csv” file type is the one we are most interested in because it is actually useful to work with.
+
+
+
+Objectives:
+•	Programming basics
+•	Open File
+•	Read from file
+•	Parse and Manipulate Information in File
+•	Write to file
+
+
+Programming Basics
+
+Basics of programming includes simple things such as: variable assignment, loops and logic statements. It is expected you are familiar with these concepts, however you may not know the syntax which you will learn by doing this example project.
+
+Open Files
+
+I will give you the file to open, the text is also at the bottom of this document if I forget (save the text to a .txt file) and make sure you put it into your working directory. You should open this file in a text editor to see what you are parsing. Also, everything written in that text file was done on purpose.
+
+Create a script:
+•	Obtain the name of a file from user input and put their input into a string variable.
+•	Check the string to see if it contains a file extension. If it does not, append “.txt”, if it does, do nothing.
+•	Use a “Try/Except” statement when opening the file to make sure the program doesn’t crash if the file DNE. Make sure you open it into a variable and in “read” mode.
+•	If the file exists parse out the name of the file using regular expressions from the string variable. Save the name of the file in its own variable. 
+•	Move to next section
+
+You might have noticed that I told you to open the file into a variable, which is specifically different from reading a file into a variable as the contents are different.
+Read From File
+
+•	Create a for-loop to read from the file variable you created line by line. 
+
+Note that you could also read the entire file into a variable as well as read line by line, but reading line by line will be easier to work with for now.
+Parse and Manipulate Information in File
+
+This is the fun part.
+
+Objectives for parsing
+•	Group all non-letter (special) characters
+o	Store the count value
+•	Group anything that it between parenthesis
+o	Store the count value
+•	Group all numbers
+o	Store the count value
+•	Find the symbol “\m/”
+o	Store what line it was found in
+•	On the album data of Animals as Leaders, create a
+o	Dictionary(Keys = Track NAMES; Values = Track NUMBER)
+o	List containing the track names
+
+Create string to write to .csv file
+•	Reminder: csv = Comma Separated Value
+•	The way to create a .csv is to make a string with values separated by commas and write that string to a .csv file!
+•	Below is an example AND is also what I want you to do!
+
+You can use excel to view .csv files, and it I wanted a table to look like this:
+
+Special Characters	111
+Chars between Parenthesis	222
+Number count	333
+“\m/” found a line	444
+Animals as Leaders Album	
+1	Tempting Time
+2	Soroya
+<continue for all the tracks>	
+
+I would create a string variable such as:
+ 
+
+
+
+
+
+•	.format is a built in function for working with strings
+o	{#} is explained if you search for .format in python
+o	It like a tuple
+•	numOfSC, numOfCBP are variable I made up
+o	They contain 111 and 222 respectively
+•	Notice YOU DON’T NEED A COMMA FOR \n alone and it works.
+•	Notice that the string is incomplete and you need to finish it.
+
+PRO-TIP
+Writing a string explicitly like I did in the example above is tedious and inefficient. What I do to make things go much quicker is store substrings into a list and append each item in the list to a string with a comma substring separating the items in the list.
+
+Example:
+
+ 
+
+•	Once you have finished reading everything from the file you can now and should now close the file!
+
+Write to File
+
+To write to a file you need to have a file to write to. Python makes this easy for you if you don’t have a file available to write to.
+
+Open New File
+•	Ask the user for a filename to write to
+•	In the first run of your program the file to be opened will most likely not exist in your directory, so you need to create one.
+•	To create a file you simply need to follow the same opening procedure to open a file that does exist, if that file does not exist python will create a file for you when you try to open it!
+•	Make sure the filename has a “.csv” appended to it and that you open it up in “write” mode.
+•	Write your string to that file
+•	Close that file
+•	Copy that file to your desktop or some folder and open the file in excel
+•	Check to see that it looks like the table in the example above. 
+
+
+
+Animal$ a$ LeAd(er)s is @ re3lly Re3lly c00l B@nd
+THEY @re a pr0(GG)r$$iv3 metal\m/ b#nd
+
+1st album TRAck($):
+
++1 "Tempting Time"
++2 "Soroya"
++3 "Thoroughly at Home"
++4 "On Impulse"
++5 Tessitura"
++6 "Behaving Badly"
++7 "The Price of Everything and the Value of Nothing"
++8 "CAFO"
++9 "Inamorata"
++10 "Point to Point
++11 "Modern Meat"
++12 "Song of Solomon"
