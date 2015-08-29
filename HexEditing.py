@@ -227,14 +227,20 @@ def multicopy():
 
     print "\nPlease select the file you wish to have copied."
 
-    fcpyfrom = getFileLocation()
-    fcpyname = getFileNameFromFilePath(fcpyfrom)
-    fcpyfrom = open(fcpyfrom, 'r').read()
-    for loc in xroot.findall('Location'):
-        f = open(loc.text + '/' + fcpyname, 'w')
-        f.write(fcpyfrom)
-        f.close()
-
+    try:
+        
+        fcpyfrom = getFileLocation()
+        fcpyname = getFileNameFromFilePath(fcpyfrom)
+        fcpyfrom = open(fcpyfrom, 'r').read()
+        for loc in xroot.findall('Location'):
+            f = open(loc.text + '/' + fcpyname, 'w')
+            f.write(fcpyfrom)
+            f.close()
+        print "\nFile was successfully copied!"
+    except:
+        print "\nCould not copy file!"
+        pass
+    
 exitProgram = False
 while(not exitProgram):
     print "\nHex editing options\n"
